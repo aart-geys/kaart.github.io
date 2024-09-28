@@ -26,7 +26,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_691e7d417d8ae4293acd84fdad7a191b {
+                #map_88fb0b394e0400419f00953410d5f8e5 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -40,20 +40,21 @@
 <body>
     
     
-            <div class="folium-map" id="map_691e7d417d8ae4293acd84fdad7a191b" ></div>
+            <div class="folium-map" id="map_88fb0b394e0400419f00953410d5f8e5" ></div>
         
 </body>
 <script>
     
     
-            var map_691e7d417d8ae4293acd84fdad7a191b = L.map(
-                "map_691e7d417d8ae4293acd84fdad7a191b",
+            var map_88fb0b394e0400419f00953410d5f8e5 = L.map(
+                "map_88fb0b394e0400419f00953410d5f8e5",
                 {
                     center: [30.0, 10.0],
                     crs: L.CRS.EPSG3857,
-                    zoom: 3,
+                    zoom: 4,
                     zoomControl: true,
                     preferCanvas: false,
+                    atrr: "Tiles (C) Esri -- Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
                 }
             );
 
@@ -61,1203 +62,2740 @@
 
         
     
-            var tile_layer_d73069578a1ab3ab9ea72f153ec46b6a = L.tileLayer(
-                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            var tile_layer_1c303084e6f454a4ab38bb3906e350c2 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Tiles \u0026copy; Esri \u0026mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community", "detectRetina": false, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_d73069578a1ab3ab9ea72f153ec46b6a.addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            tile_layer_1c303084e6f454a4ab38bb3906e350c2.addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var marker_d86985d11214d33c61df0e4aacb4bc33 = L.marker(
+            var marker_40231519d9eb0938eb9fa339492ed7f7 = L.marker(
+                [29.15111111, -89.25333333],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_2fd51fdf2e7432c4e7cf4001b68ab42a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_40231519d9eb0938eb9fa339492ed7f7.setIcon(icon_2fd51fdf2e7432c4e7cf4001b68ab42a);
+        
+    
+        var popup_592726d0e99f0fcb14e8b8ccfbe3f516 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fe69b34398051afa6b7587ae74863a0 = $(`<div id="html_3fe69b34398051afa6b7587ae74863a0" style="width: 100.0%; height: 100.0%;">The Mississippi<br><a href="https://en.wikipedia.org/wiki/Mississippi_River" target="_blank">Mississippi River</a></div>`)[0];
+                popup_592726d0e99f0fcb14e8b8ccfbe3f516.setContent(html_3fe69b34398051afa6b7587ae74863a0);
+            
+        
+
+        marker_40231519d9eb0938eb9fa339492ed7f7.bindPopup(popup_592726d0e99f0fcb14e8b8ccfbe3f516)
+        ;
+
+        
+    
+    
+            var marker_d04047c74d50d4fb9bd34d0e718b87ec = L.marker(
+                [-15.51777778, -71.69361111],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_34c8579ff8b8b6f03ce3a23d6714da8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_d04047c74d50d4fb9bd34d0e718b87ec.setIcon(icon_34c8579ff8b8b6f03ce3a23d6714da8b);
+        
+    
+        var popup_a5f9354083fac81053401dc7ad05a2d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4eafa5b41e514635d98b2da53b6973e6 = $(`<div id="html_4eafa5b41e514635d98b2da53b6973e6" style="width: 100.0%; height: 100.0%;">the Amazon<br><a href="https://en.wikipedia.org/wiki/Amazon_River" target="_blank">Amazon River</a></div>`)[0];
+                popup_a5f9354083fac81053401dc7ad05a2d9.setContent(html_4eafa5b41e514635d98b2da53b6973e6);
+            
+        
+
+        marker_d04047c74d50d4fb9bd34d0e718b87ec.bindPopup(popup_a5f9354083fac81053401dc7ad05a2d9)
+        ;
+
+        
+    
+    
+            var marker_aa064143fe7b3ff2a0d0e9bd03d23ecc = L.marker(
+                [15.78805556, -16.52888889],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_6c1700ea95d2a94475d9bf2f60d8d9d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_aa064143fe7b3ff2a0d0e9bd03d23ecc.setIcon(icon_6c1700ea95d2a94475d9bf2f60d8d9d3);
+        
+    
+        var popup_8bde90454115d942ccf7099aa4eabb91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd8a33046dbb664baee7dabd1a3376fa = $(`<div id="html_fd8a33046dbb664baee7dabd1a3376fa" style="width: 100.0%; height: 100.0%;">the Senegal<br><a href="https://en.wikipedia.org/wiki/Senegal_River" target="_blank">Senegal River</a></div>`)[0];
+                popup_8bde90454115d942ccf7099aa4eabb91.setContent(html_fd8a33046dbb664baee7dabd1a3376fa);
+            
+        
+
+        marker_aa064143fe7b3ff2a0d0e9bd03d23ecc.bindPopup(popup_8bde90454115d942ccf7099aa4eabb91)
+        ;
+
+        
+    
+    
+            var marker_1c81bd6a12ffaf8ce2ccca5ef49f1c1f = L.marker(
+                [5.32222222, 6.46916667],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_08f0e2652b4d7c0be4fc04cc1dcde820 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_1c81bd6a12ffaf8ce2ccca5ef49f1c1f.setIcon(icon_08f0e2652b4d7c0be4fc04cc1dcde820);
+        
+    
+        var popup_b043fec0ec18c9ab6ed814723587323e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5ae7a12f058b4a15c73f28e5fc3d9cc = $(`<div id="html_b5ae7a12f058b4a15c73f28e5fc3d9cc" style="width: 100.0%; height: 100.0%;">the Niger<br><a href="https://en.wikipedia.org/wiki/Niger_River" target="_blank">Niger River</a></div>`)[0];
+                popup_b043fec0ec18c9ab6ed814723587323e.setContent(html_b5ae7a12f058b4a15c73f28e5fc3d9cc);
+            
+        
+
+        marker_1c81bd6a12ffaf8ce2ccca5ef49f1c1f.bindPopup(popup_b043fec0ec18c9ab6ed814723587323e)
+        ;
+
+        
+    
+    
+            var marker_1c8afe9d1f5e168db4bbeb1303e55ba3 = L.marker(
+                [-6.075, 12.45],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_5a12cf73e4a653eb9d478b69097c9fd3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_1c8afe9d1f5e168db4bbeb1303e55ba3.setIcon(icon_5a12cf73e4a653eb9d478b69097c9fd3);
+        
+    
+        var popup_b38a274b963af91a47fa900e53fcdb01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8511f1f7c0e07542cfa4c02f8214fd5b = $(`<div id="html_8511f1f7c0e07542cfa4c02f8214fd5b" style="width: 100.0%; height: 100.0%;">the Congo<br><a href="https://en.wikipedia.org/wiki/Congo_River" target="_blank">Congo River</a></div>`)[0];
+                popup_b38a274b963af91a47fa900e53fcdb01.setContent(html_8511f1f7c0e07542cfa4c02f8214fd5b);
+            
+        
+
+        marker_1c8afe9d1f5e168db4bbeb1303e55ba3.bindPopup(popup_b38a274b963af91a47fa900e53fcdb01)
+        ;
+
+        
+    
+    
+            var marker_af5871aec40a0e95b9bdcb8caa75603e = L.marker(
+                [-18.57055556, 36.47027778],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_ae6d645a2214b51c9d032287d7bbd8d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_af5871aec40a0e95b9bdcb8caa75603e.setIcon(icon_ae6d645a2214b51c9d032287d7bbd8d2);
+        
+    
+        var popup_385dd192071d5cedb2712b8dab8a3f31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36be303954025db341d83b91ad54b093 = $(`<div id="html_36be303954025db341d83b91ad54b093" style="width: 100.0%; height: 100.0%;">the Zambesi<br><a href="https://en.wikipedia.org/wiki/Zambezi" target="_blank">Zambezi</a></div>`)[0];
+                popup_385dd192071d5cedb2712b8dab8a3f31.setContent(html_36be303954025db341d83b91ad54b093);
+            
+        
+
+        marker_af5871aec40a0e95b9bdcb8caa75603e.bindPopup(popup_385dd192071d5cedb2712b8dab8a3f31)
+        ;
+
+        
+    
+    
+            var marker_5372c923f9500bdcf2c4019810f0a080 = L.marker(
+                [30.1725, 31.14],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_652b9b3b01cf4e14597eda6da5dae48b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_5372c923f9500bdcf2c4019810f0a080.setIcon(icon_652b9b3b01cf4e14597eda6da5dae48b);
+        
+    
+        var popup_a725dc044c87834ed2f919f020cd3e0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55938711378731fd010f2646b5dc3705 = $(`<div id="html_55938711378731fd010f2646b5dc3705" style="width: 100.0%; height: 100.0%;">the Nile<br><a href="https://en.wikipedia.org/wiki/Nile" target="_blank">Nile</a></div>`)[0];
+                popup_a725dc044c87834ed2f919f020cd3e0c.setContent(html_55938711378731fd010f2646b5dc3705);
+            
+        
+
+        marker_5372c923f9500bdcf2c4019810f0a080.bindPopup(popup_a725dc044c87834ed2f919f020cd3e0c)
+        ;
+
+        
+    
+    
+            var marker_7654ba3160eece1ba681df8457aff945 = L.marker(
+                [38.691, -9.171],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_7f32fc1198f4e8887a1cb576185df66d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7654ba3160eece1ba681df8457aff945.setIcon(icon_7f32fc1198f4e8887a1cb576185df66d);
+        
+    
+        var popup_c81df83415c6dfe8be65d8d5c0741436 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73c80d1bd2bee2e648d78ecba14dab69 = $(`<div id="html_73c80d1bd2bee2e648d78ecba14dab69" style="width: 100.0%; height: 100.0%;">the Tagus<br><a href="https://en.wikipedia.org/wiki/Tagus" target="_blank">Tagus</a></div>`)[0];
+                popup_c81df83415c6dfe8be65d8d5c0741436.setContent(html_73c80d1bd2bee2e648d78ecba14dab69);
+            
+        
+
+        marker_7654ba3160eece1ba681df8457aff945.bindPopup(popup_c81df83415c6dfe8be65d8d5c0741436)
+        ;
+
+        
+    
+    
+            var marker_3e2f49a7ab836ad6880923fad5e617fc = L.marker(
+                [40.72, 0.86305556],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_57a3ce4774ef24a8cf19184c4d43565f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_3e2f49a7ab836ad6880923fad5e617fc.setIcon(icon_57a3ce4774ef24a8cf19184c4d43565f);
+        
+    
+        var popup_4f320e237ddc41c989ac275a984e7fb9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d498d6a3a69cb37e6089cd1d561313e6 = $(`<div id="html_d498d6a3a69cb37e6089cd1d561313e6" style="width: 100.0%; height: 100.0%;">the Ebro<br><a href="https://en.wikipedia.org/wiki/Ebro" target="_blank">Ebro</a></div>`)[0];
+                popup_4f320e237ddc41c989ac275a984e7fb9.setContent(html_d498d6a3a69cb37e6089cd1d561313e6);
+            
+        
+
+        marker_3e2f49a7ab836ad6880923fad5e617fc.bindPopup(popup_4f320e237ddc41c989ac275a984e7fb9)
+        ;
+
+        
+    
+    
+            var marker_acc3ccdb5da34134b0c45bde7c012d32 = L.marker(
+                [51.5, 0.61],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_b12bdb24fdee19a3076e15d78885b9f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_acc3ccdb5da34134b0c45bde7c012d32.setIcon(icon_b12bdb24fdee19a3076e15d78885b9f8);
+        
+    
+        var popup_3118dc6785acfceb575c40cde444f5d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3483ccd9bcb90681d73de0974b8cba8 = $(`<div id="html_c3483ccd9bcb90681d73de0974b8cba8" style="width: 100.0%; height: 100.0%;">the Thames<br><a href="https://en.wikipedia.org/wiki/River_Thames" target="_blank">River Thames</a></div>`)[0];
+                popup_3118dc6785acfceb575c40cde444f5d5.setContent(html_c3483ccd9bcb90681d73de0974b8cba8);
+            
+        
+
+        marker_acc3ccdb5da34134b0c45bde7c012d32.bindPopup(popup_3118dc6785acfceb575c40cde444f5d5)
+        ;
+
+        
+    
+    
+            var marker_b432d66b06480f3a189b6baf02e0f0bb = L.marker(
+                [45.04138889, -0.60666667],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_4c1eba7993ed8933e1186406d191934b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_b432d66b06480f3a189b6baf02e0f0bb.setIcon(icon_4c1eba7993ed8933e1186406d191934b);
+        
+    
+        var popup_da28b7afe6d30d1bd6832a63fccf61b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72afdc18b59ac6d7cb1a7a475df6ff69 = $(`<div id="html_72afdc18b59ac6d7cb1a7a475df6ff69" style="width: 100.0%; height: 100.0%;">the Garonne<br><a href="https://en.wikipedia.org/wiki/Garonne" target="_blank">Garonne</a></div>`)[0];
+                popup_da28b7afe6d30d1bd6832a63fccf61b3.setContent(html_72afdc18b59ac6d7cb1a7a475df6ff69);
+            
+        
+
+        marker_b432d66b06480f3a189b6baf02e0f0bb.bindPopup(popup_da28b7afe6d30d1bd6832a63fccf61b3)
+        ;
+
+        
+    
+    
+            var marker_cbd6db074987c7163494f581d6d9735e = L.marker(
+                [49.43388889, 0.20666667],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_529bd7cb28fe8a74dfed86701dc5eb52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_cbd6db074987c7163494f581d6d9735e.setIcon(icon_529bd7cb28fe8a74dfed86701dc5eb52);
+        
+    
+        var popup_1bf6f5c9b3e32e3d16f03b46d56c8a2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d513899e3d9373245708a80cf96595d8 = $(`<div id="html_d513899e3d9373245708a80cf96595d8" style="width: 100.0%; height: 100.0%;">the Seine<br><a href="https://en.wikipedia.org/wiki/Seine" target="_blank">Seine</a></div>`)[0];
+                popup_1bf6f5c9b3e32e3d16f03b46d56c8a2f.setContent(html_d513899e3d9373245708a80cf96595d8);
+            
+        
+
+        marker_cbd6db074987c7163494f581d6d9735e.bindPopup(popup_1bf6f5c9b3e32e3d16f03b46d56c8a2f)
+        ;
+
+        
+    
+    
+            var marker_36d1fd8486aff72122a397cc23705a6a = L.marker(
+                [47.26916667, -2.18583333],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_e94531c8976e05dbc2b9a3afa4251f47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_36d1fd8486aff72122a397cc23705a6a.setIcon(icon_e94531c8976e05dbc2b9a3afa4251f47);
+        
+    
+        var popup_fc3f3fc0c880120570dbe31b75f23d71 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b870be363401e881585a1ede4bb67597 = $(`<div id="html_b870be363401e881585a1ede4bb67597" style="width: 100.0%; height: 100.0%;">the Loire<br><a href="https://en.wikipedia.org/wiki/Loire" target="_blank">Loire</a></div>`)[0];
+                popup_fc3f3fc0c880120570dbe31b75f23d71.setContent(html_b870be363401e881585a1ede4bb67597);
+            
+        
+
+        marker_36d1fd8486aff72122a397cc23705a6a.bindPopup(popup_fc3f3fc0c880120570dbe31b75f23d71)
+        ;
+
+        
+    
+    
+            var marker_d7151479b1e727a29887c71bbc018bc9 = L.marker(
+                [49.43388889, 0.20666667],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_1b905ef027003523a612c2520a5587fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_d7151479b1e727a29887c71bbc018bc9.setIcon(icon_1b905ef027003523a612c2520a5587fa);
+        
+    
+        var popup_099fe0956a6494633e0d33f038f0f511 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bec528ffeba1d22dfa1ae0e22afda2c = $(`<div id="html_5bec528ffeba1d22dfa1ae0e22afda2c" style="width: 100.0%; height: 100.0%;">the Seine<br><a href="https://en.wikipedia.org/wiki/Seine" target="_blank">Seine</a></div>`)[0];
+                popup_099fe0956a6494633e0d33f038f0f511.setContent(html_5bec528ffeba1d22dfa1ae0e22afda2c);
+            
+        
+
+        marker_d7151479b1e727a29887c71bbc018bc9.bindPopup(popup_099fe0956a6494633e0d33f038f0f511)
+        ;
+
+        
+    
+    
+            var marker_75ec8ef2bc7d2afe540c160abbf2a48c = L.marker(
+                [43.330833, 4.845556],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_a8a0a33a151b0022c4c7134f83cdb075 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_75ec8ef2bc7d2afe540c160abbf2a48c.setIcon(icon_a8a0a33a151b0022c4c7134f83cdb075);
+        
+    
+        var popup_07333167928938feb6ca8f3989f88165 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5155939979cd1fad16649968c95506d4 = $(`<div id="html_5155939979cd1fad16649968c95506d4" style="width: 100.0%; height: 100.0%;">the Rhone<br><a href="https://en.wikipedia.org/wiki/Rh%C3%B4ne" target="_blank">Rhone</a></div>`)[0];
+                popup_07333167928938feb6ca8f3989f88165.setContent(html_5155939979cd1fad16649968c95506d4);
+            
+        
+
+        marker_75ec8ef2bc7d2afe540c160abbf2a48c.bindPopup(popup_07333167928938feb6ca8f3989f88165)
+        ;
+
+        
+    
+    
+            var marker_94924d9016ac605f6545f884e493043a = L.marker(
+                [51.98166667, 4.08055556],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_f549c23e9c983945819bcac69c3e2efb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_94924d9016ac605f6545f884e493043a.setIcon(icon_f549c23e9c983945819bcac69c3e2efb);
+        
+    
+        var popup_56a3e969ff21da7fbd8b8bfd58350bf2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91d02a9ec3544c6a5fe0bfdcdfe7d3f1 = $(`<div id="html_91d02a9ec3544c6a5fe0bfdcdfe7d3f1" style="width: 100.0%; height: 100.0%;">the Rhine<br><a href="https://en.wikipedia.org/wiki/Rhine" target="_blank">Rhine</a></div>`)[0];
+                popup_56a3e969ff21da7fbd8b8bfd58350bf2.setContent(html_91d02a9ec3544c6a5fe0bfdcdfe7d3f1);
+            
+        
+
+        marker_94924d9016ac605f6545f884e493043a.bindPopup(popup_56a3e969ff21da7fbd8b8bfd58350bf2)
+        ;
+
+        
+    
+    
+            var marker_e62eeff8f9008ed1a1b02108b7400066 = L.marker(
+                [45.2175, 29.76138889],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_4ce3144108e14cbd4818fb58b15d98fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_e62eeff8f9008ed1a1b02108b7400066.setIcon(icon_4ce3144108e14cbd4818fb58b15d98fe);
+        
+    
+        var popup_4ddfeec173d1bded4dbb7097225e7816 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_044db8e22a911727fcfde4b9df79881f = $(`<div id="html_044db8e22a911727fcfde4b9df79881f" style="width: 100.0%; height: 100.0%;">the Danube<br><a href="https://en.wikipedia.org/wiki/Danube" target="_blank">Danube</a></div>`)[0];
+                popup_4ddfeec173d1bded4dbb7097225e7816.setContent(html_044db8e22a911727fcfde4b9df79881f);
+            
+        
+
+        marker_e62eeff8f9008ed1a1b02108b7400066.bindPopup(popup_4ddfeec173d1bded4dbb7097225e7816)
+        ;
+
+        
+    
+    
+            var marker_a7aa78db37ff6f7f3b450e41b42f4357 = L.marker(
+                [51.43083333, 3.52888889],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_a0f06a114a8fd8c932cc67aad90a3f35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_a7aa78db37ff6f7f3b450e41b42f4357.setIcon(icon_a0f06a114a8fd8c932cc67aad90a3f35);
+        
+    
+        var popup_bcbf8ca12c7b02fefc0ea123652a7880 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7a481c0fce5b3be59ba5462d71b3939 = $(`<div id="html_d7a481c0fce5b3be59ba5462d71b3939" style="width: 100.0%; height: 100.0%;">the Scheldt<br><a href="https://en.wikipedia.org/wiki/Scheldt" target="_blank">Scheldt</a></div>`)[0];
+                popup_bcbf8ca12c7b02fefc0ea123652a7880.setContent(html_d7a481c0fce5b3be59ba5462d71b3939);
+            
+        
+
+        marker_a7aa78db37ff6f7f3b450e41b42f4357.bindPopup(popup_bcbf8ca12c7b02fefc0ea123652a7880)
+        ;
+
+        
+    
+    
+            var marker_18328b8d8f7ab6c15bc2274acb59dcdb = L.marker(
+                [51.715, 4.6678],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_51d370cd78e67c3275b96272e7238da5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_18328b8d8f7ab6c15bc2274acb59dcdb.setIcon(icon_51d370cd78e67c3275b96272e7238da5);
+        
+    
+        var popup_c9d8a79bc21b2fc7c414977651fbb348 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_233024b532ea40be430151bf8d018e76 = $(`<div id="html_233024b532ea40be430151bf8d018e76" style="width: 100.0%; height: 100.0%;">the Meuse<br><a href="https://en.wikipedia.org/wiki/Meuse" target="_blank">Meuse</a></div>`)[0];
+                popup_c9d8a79bc21b2fc7c414977651fbb348.setContent(html_233024b532ea40be430151bf8d018e76);
+            
+        
+
+        marker_18328b8d8f7ab6c15bc2274acb59dcdb.bindPopup(popup_c9d8a79bc21b2fc7c414977651fbb348)
+        ;
+
+        
+    
+    
+            var marker_2ebaf86a51dbb85f728b4b20f4e02c67 = L.marker(
+                [53.92222222, 8.72222222],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_37b778cdbe8f81edb1b42896385c34cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_2ebaf86a51dbb85f728b4b20f4e02c67.setIcon(icon_37b778cdbe8f81edb1b42896385c34cf);
+        
+    
+        var popup_ad493594b74604086ccdcd125b3544bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71c33c9077736a6cb06a3bf720c2415c = $(`<div id="html_71c33c9077736a6cb06a3bf720c2415c" style="width: 100.0%; height: 100.0%;">the Elbe<br><a href="https://en.wikipedia.org/wiki/Elbe" target="_blank">Elbe</a></div>`)[0];
+                popup_ad493594b74604086ccdcd125b3544bd.setContent(html_71c33c9077736a6cb06a3bf720c2415c);
+            
+        
+
+        marker_2ebaf86a51dbb85f728b4b20f4e02c67.bindPopup(popup_ad493594b74604086ccdcd125b3544bd)
+        ;
+
+        
+    
+    
+            var marker_89f99ad29a9fb896ace6aaf775c7fde3 = L.marker(
+                [45.695, 47.8975],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_aa3c70e9e319907baa2f68c8dc7748f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_89f99ad29a9fb896ace6aaf775c7fde3.setIcon(icon_aa3c70e9e319907baa2f68c8dc7748f7);
+        
+    
+        var popup_d2b0df485573890b49718016926ae279 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a37afeee224c7bbdabb3814dfa80007c = $(`<div id="html_a37afeee224c7bbdabb3814dfa80007c" style="width: 100.0%; height: 100.0%;">the Volga<br><a href="https://en.wikipedia.org/wiki/Volga" target="_blank">Volga</a></div>`)[0];
+                popup_d2b0df485573890b49718016926ae279.setContent(html_a37afeee224c7bbdabb3814dfa80007c);
+            
+        
+
+        marker_89f99ad29a9fb896ace6aaf775c7fde3.bindPopup(popup_d2b0df485573890b49718016926ae279)
+        ;
+
+        
+    
+    
+            var marker_6fb87d881f44a45c521ec84757646571 = L.marker(
+                [66.53388889, 71.39472222],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_fc0358b24de3c3549ce7d5b1e7b2a0a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6fb87d881f44a45c521ec84757646571.setIcon(icon_fc0358b24de3c3549ce7d5b1e7b2a0a1);
+        
+    
+        var popup_3b7086f3d2b3e378706096a8b8045f9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9172e45dbececca27868da80bf919bd8 = $(`<div id="html_9172e45dbececca27868da80bf919bd8" style="width: 100.0%; height: 100.0%;">the Ob<br><a href="https://en.wikipedia.org/wiki/Ob_(river)" target="_blank">Ob (river)</a></div>`)[0];
+                popup_3b7086f3d2b3e378706096a8b8045f9c.setContent(html_9172e45dbececca27868da80bf919bd8);
+            
+        
+
+        marker_6fb87d881f44a45c521ec84757646571.bindPopup(popup_3b7086f3d2b3e378706096a8b8045f9c)
+        ;
+
+        
+    
+    
+            var marker_074ab11d005421e1cd32596126f5eade = L.marker(
+                [52.94722222, 141.08388889],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_7c68044b1fb5f9e298b3e8290b79d51a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_074ab11d005421e1cd32596126f5eade.setIcon(icon_7c68044b1fb5f9e298b3e8290b79d51a);
+        
+    
+        var popup_356ab47212c3b1411f621dd2980e1f37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25af1e2f799bf2fd389804c7e4cbea46 = $(`<div id="html_25af1e2f799bf2fd389804c7e4cbea46" style="width: 100.0%; height: 100.0%;">the Amur<br><a href="https://en.wikipedia.org/wiki/Amur" target="_blank">Amur</a></div>`)[0];
+                popup_356ab47212c3b1411f621dd2980e1f37.setContent(html_25af1e2f799bf2fd389804c7e4cbea46);
+            
+        
+
+        marker_074ab11d005421e1cd32596126f5eade.bindPopup(popup_356ab47212c3b1411f621dd2980e1f37)
+        ;
+
+        
+    
+    
+            var marker_6712010819540bb05a1d26b23b30194c = L.marker(
+                [37.763, 119.162],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_e681dd4ac2c1aab065ec637d9f2f224f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6712010819540bb05a1d26b23b30194c.setIcon(icon_e681dd4ac2c1aab065ec637d9f2f224f);
+        
+    
+        var popup_bb93d6d0bc508d9f8548261c532d2c29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c134209415a6e4934edbea88f9d25b2b = $(`<div id="html_c134209415a6e4934edbea88f9d25b2b" style="width: 100.0%; height: 100.0%;">the Yellow River<br><a href="https://en.wikipedia.org/wiki/Yellow_River" target="_blank">Yellow River</a></div>`)[0];
+                popup_bb93d6d0bc508d9f8548261c532d2c29.setContent(html_c134209415a6e4934edbea88f9d25b2b);
+            
+        
+
+        marker_6712010819540bb05a1d26b23b30194c.bindPopup(popup_bb93d6d0bc508d9f8548261c532d2c29)
+        ;
+
+        
+    
+    
+            var marker_ae758680daaddaa0ab7977fb619f3afd = L.marker(
+                [31.39361111, 121.98305556],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_50dd8722898cdc349c23928f942099d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_ae758680daaddaa0ab7977fb619f3afd.setIcon(icon_50dd8722898cdc349c23928f942099d5);
+        
+    
+        var popup_89ac5a4039a086b8a8d7eaedc1479f1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c7676117fef51151624de4246fc18bb = $(`<div id="html_5c7676117fef51151624de4246fc18bb" style="width: 100.0%; height: 100.0%;">the Yangtze<br><a href="https://en.wikipedia.org/wiki/Yangtze" target="_blank">Yangtze</a></div>`)[0];
+                popup_89ac5a4039a086b8a8d7eaedc1479f1e.setContent(html_5c7676117fef51151624de4246fc18bb);
+            
+        
+
+        marker_ae758680daaddaa0ab7977fb619f3afd.bindPopup(popup_89ac5a4039a086b8a8d7eaedc1479f1e)
+        ;
+
+        
+    
+    
+            var marker_c5881eb8ec4ec833e27e2e14b9786f6e = L.marker(
+                [31.01944444, -91.74777778],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_357427d3baf212e9c8e0fb26dc7e8985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_c5881eb8ec4ec833e27e2e14b9786f6e.setIcon(icon_357427d3baf212e9c8e0fb26dc7e8985);
+        
+    
+        var popup_06ac82d2038ba00d8bb51b36ef27540b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c2378383357b3c24839833468d6df8a = $(`<div id="html_9c2378383357b3c24839833468d6df8a" style="width: 100.0%; height: 100.0%;">the Red River<br><a href="https://en.wikipedia.org/wiki/Red_River_of_the_South" target="_blank">Red River of the South</a></div>`)[0];
+                popup_06ac82d2038ba00d8bb51b36ef27540b.setContent(html_9c2378383357b3c24839833468d6df8a);
+            
+        
+
+        marker_c5881eb8ec4ec833e27e2e14b9786f6e.bindPopup(popup_06ac82d2038ba00d8bb51b36ef27540b)
+        ;
+
+        
+    
+    
+            var marker_5e9b4dd52358c27ce0ba419526badf5c = L.marker(
+                [10.19, 106.75],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_a1cafe12a4c26c4802f1a476640d3c68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_5e9b4dd52358c27ce0ba419526badf5c.setIcon(icon_a1cafe12a4c26c4802f1a476640d3c68);
+        
+    
+        var popup_bec46331b560ae17b72fb452d2560d9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17e373a896c926dd91b51129b82c7412 = $(`<div id="html_17e373a896c926dd91b51129b82c7412" style="width: 100.0%; height: 100.0%;">the Mekong<br><a href="https://en.wikipedia.org/wiki/Mekong" target="_blank">Mekong</a></div>`)[0];
+                popup_bec46331b560ae17b72fb452d2560d9a.setContent(html_17e373a896c926dd91b51129b82c7412);
+            
+        
+
+        marker_5e9b4dd52358c27ce0ba419526badf5c.bindPopup(popup_bec46331b560ae17b72fb452d2560d9a)
+        ;
+
+        
+    
+    
+            var marker_f7512b88b160d55efd9d55ba4ab89ad0 = L.marker(
+                [15.85527778, 95.24083333],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_e9ec09a9d4523a60b0954b8277511bec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_f7512b88b160d55efd9d55ba4ab89ad0.setIcon(icon_e9ec09a9d4523a60b0954b8277511bec);
+        
+    
+        var popup_ad03a8bbfbca67b28a511bcb7e490e7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97803553ef04d7ac9cca05a750911482 = $(`<div id="html_97803553ef04d7ac9cca05a750911482" style="width: 100.0%; height: 100.0%;">the Irrawaddy<br><a href="https://en.wikipedia.org/wiki/Irrawaddy_River" target="_blank">Irrawaddy River</a></div>`)[0];
+                popup_ad03a8bbfbca67b28a511bcb7e490e7e.setContent(html_97803553ef04d7ac9cca05a750911482);
+            
+        
+
+        marker_f7512b88b160d55efd9d55ba4ab89ad0.bindPopup(popup_ad03a8bbfbca67b28a511bcb7e490e7e)
+        ;
+
+        
+    
+    
+            var marker_e48be6403971145da6c5a9fd25804675 = L.marker(
+                [23.796316, 89.762715],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_7f44f78a308af423f60fbaa876732646 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_e48be6403971145da6c5a9fd25804675.setIcon(icon_7f44f78a308af423f60fbaa876732646);
+        
+    
+        var popup_db762fac8cef745691255aa17a9a88a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f209a90fbd2fe18c0d9cf04509f91c20 = $(`<div id="html_f209a90fbd2fe18c0d9cf04509f91c20" style="width: 100.0%; height: 100.0%;">the Brahmaputra<br><a href="https://en.wikipedia.org/wiki/Brahmaputra_River" target="_blank">Brahmaputra River</a></div>`)[0];
+                popup_db762fac8cef745691255aa17a9a88a4.setContent(html_f209a90fbd2fe18c0d9cf04509f91c20);
+            
+        
+
+        marker_e48be6403971145da6c5a9fd25804675.bindPopup(popup_db762fac8cef745691255aa17a9a88a4)
+        ;
+
+        
+    
+    
+            var marker_559a7d09e622b452abb7d3c424d62712 = L.marker(
+                [22.083333, 90.833333],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_530ccd5bde4f24d9d2f297c96e45f690 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_559a7d09e622b452abb7d3c424d62712.setIcon(icon_530ccd5bde4f24d9d2f297c96e45f690);
+        
+    
+        var popup_f197a027189111fab4f9f42f57e543c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45eb09340ce27d8821f7dab8b38753fb = $(`<div id="html_45eb09340ce27d8821f7dab8b38753fb" style="width: 100.0%; height: 100.0%;">the Ganges<br><a href="https://en.wikipedia.org/wiki/Ganges" target="_blank">Ganges</a></div>`)[0];
+                popup_f197a027189111fab4f9f42f57e543c1.setContent(html_45eb09340ce27d8821f7dab8b38753fb);
+            
+        
+
+        marker_559a7d09e622b452abb7d3c424d62712.bindPopup(popup_f197a027189111fab4f9f42f57e543c1)
+        ;
+
+        
+    
+    
+            var marker_7dfd8fd8e06ec5d0ec2c4e231723f290 = L.marker(
+                [23.995, 67.435],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_38d3f2fb6c4e22cc0832a0f793b9b2eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7dfd8fd8e06ec5d0ec2c4e231723f290.setIcon(icon_38d3f2fb6c4e22cc0832a0f793b9b2eb);
+        
+    
+        var popup_75584026fe682ba0b89ae40905dcc2e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10ed486db87ff2c9082f1581c234e94e = $(`<div id="html_10ed486db87ff2c9082f1581c234e94e" style="width: 100.0%; height: 100.0%;">the Indus<br><a href="https://en.wikipedia.org/wiki/Indus_River" target="_blank"> Indus River</a></div>`)[0];
+                popup_75584026fe682ba0b89ae40905dcc2e5.setContent(html_10ed486db87ff2c9082f1581c234e94e);
+            
+        
+
+        marker_7dfd8fd8e06ec5d0ec2c4e231723f290.bindPopup(popup_75584026fe682ba0b89ae40905dcc2e5)
+        ;
+
+        
+    
+    
+            var marker_6a1f1811e1d3ad3247c8bb0d2c2e8cb3 = L.marker(
+                [44.10833333, 59.68111111],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_a29f7ada690fe61d51083a61cb4c9ca1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6a1f1811e1d3ad3247c8bb0d2c2e8cb3.setIcon(icon_a29f7ada690fe61d51083a61cb4c9ca1);
+        
+    
+        var popup_f5324f0581acb022285c650f414531f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_672dd52739c470979132c1044c5a63d7 = $(`<div id="html_672dd52739c470979132c1044c5a63d7" style="width: 100.0%; height: 100.0%;">the Amu Darya (Oxus)<br><a href="https://en.wikipedia.org/wiki/Amu_Darya" target="_blank">Amu Darya</a></div>`)[0];
+                popup_f5324f0581acb022285c650f414531f7.setContent(html_672dd52739c470979132c1044c5a63d7);
+            
+        
+
+        marker_6a1f1811e1d3ad3247c8bb0d2c2e8cb3.bindPopup(popup_f5324f0581acb022285c650f414531f7)
+        ;
+
+        
+    
+    
+            var marker_2d4e273d31e1eea614e1eadb2cdc124e = L.marker(
+                [31.005, 47.44194444],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_39917086d898fb8f1429a3d105a17752 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_2d4e273d31e1eea614e1eadb2cdc124e.setIcon(icon_39917086d898fb8f1429a3d105a17752);
+        
+    
+        var popup_a6d3a5543daf86ed9e5f833d4f3f8b80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc2231f37d1dfea8de334cc45fd5796f = $(`<div id="html_bc2231f37d1dfea8de334cc45fd5796f" style="width: 100.0%; height: 100.0%;">the Tigris<br><a href="https://en.wikipedia.org/wiki/Tigris" target="_blank">Tigris</a></div>`)[0];
+                popup_a6d3a5543daf86ed9e5f833d4f3f8b80.setContent(html_bc2231f37d1dfea8de334cc45fd5796f);
+            
+        
+
+        marker_2d4e273d31e1eea614e1eadb2cdc124e.bindPopup(popup_a6d3a5543daf86ed9e5f833d4f3f8b80)
+        ;
+
+        
+    
+    
+            var marker_6975f64faa1d7d1b98ddfee102854860 = L.marker(
+                [35.99111111, 43.34361111],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_e1d12282655d22f9dcd1902e9205ef81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_6975f64faa1d7d1b98ddfee102854860.setIcon(icon_e1d12282655d22f9dcd1902e9205ef81);
+        
+    
+        var popup_b403b5221069cb6e80be5351090171c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5cd1ffbc6434991099ba5f087fedb5e = $(`<div id="html_e5cd1ffbc6434991099ba5f087fedb5e" style="width: 100.0%; height: 100.0%;">the Zab<br><a href="https://en.wikipedia.org/wiki/Great_Zab" target="_blank">Great Zab</a></div>`)[0];
+                popup_b403b5221069cb6e80be5351090171c3.setContent(html_e5cd1ffbc6434991099ba5f087fedb5e);
+            
+        
+
+        marker_6975f64faa1d7d1b98ddfee102854860.bindPopup(popup_b403b5221069cb6e80be5351090171c3)
+        ;
+
+        
+    
+    
+            var marker_7961c39b7880cac61602ce9e6bcc2fc4 = L.marker(
+                [31.005, 47.44194444],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_1cedeb831c1ac93a4a6372865ad4b1da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7961c39b7880cac61602ce9e6bcc2fc4.setIcon(icon_1cedeb831c1ac93a4a6372865ad4b1da);
+        
+    
+        var popup_002313c51431c08055512b5610133698 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_501821dc4c5890ca1b5a50291549f3e8 = $(`<div id="html_501821dc4c5890ca1b5a50291549f3e8" style="width: 100.0%; height: 100.0%;">the Euphrates<br><a href="https://en.wikipedia.org/wiki/Euphrates" target="_blank">Euphrates</a></div>`)[0];
+                popup_002313c51431c08055512b5610133698.setContent(html_501821dc4c5890ca1b5a50291549f3e8);
+            
+        
+
+        marker_7961c39b7880cac61602ce9e6bcc2fc4.bindPopup(popup_002313c51431c08055512b5610133698)
+        ;
+
+        
+    
+    
+            var marker_7ac768446ff80fd38dff7afe750fbfbf = L.marker(
+                [33.1875, 35.61944444],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_5aacafd39e4e0d16fb40918e760d9570 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_7ac768446ff80fd38dff7afe750fbfbf.setIcon(icon_5aacafd39e4e0d16fb40918e760d9570);
+        
+    
+        var popup_6026dff16c3d9a9e2d550bb4004ba9be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c57dbf2a703d980bdf66307171f2cfe = $(`<div id="html_3c57dbf2a703d980bdf66307171f2cfe" style="width: 100.0%; height: 100.0%;">the Jordan<br><a href="https://en.wikipedia.org/wiki/Jordan_River" target="_blank">Jordan River</a></div>`)[0];
+                popup_6026dff16c3d9a9e2d550bb4004ba9be.setContent(html_3c57dbf2a703d980bdf66307171f2cfe);
+            
+        
+
+        marker_7ac768446ff80fd38dff7afe750fbfbf.bindPopup(popup_6026dff16c3d9a9e2d550bb4004ba9be)
+        ;
+
+        
+    
+    
+            var marker_411efc398e2c89c27e89cc56613f951a = L.marker(
                 [60.0, -86.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_0e6c1c8d947363ae4d21051d0eb4cf54 = L.AwesomeMarkers.icon(
+            var icon_c6cfa12420f0488941fed0d81788f622 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_d86985d11214d33c61df0e4aacb4bc33.setIcon(icon_0e6c1c8d947363ae4d21051d0eb4cf54);
+            marker_411efc398e2c89c27e89cc56613f951a.setIcon(icon_c6cfa12420f0488941fed0d81788f622);
         
     
-        var popup_192cc366288df20441fd448c04ae92c8 = L.popup({"maxWidth": "100%"});
+        var popup_92019e7c7ac5e1fafb3655a977443e92 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_3e039111e546a7e4d66f020181a67487 = $(`<div id="html_3e039111e546a7e4d66f020181a67487" style="width: 100.0%; height: 100.0%;">The Hudson Bay<br><a href="https://en.wikipedia.org/wiki/Hudson_Baytarget="_blank">The Hudson Bay</a></div>`)[0];
-                popup_192cc366288df20441fd448c04ae92c8.setContent(html_3e039111e546a7e4d66f020181a67487);
+                var html_9517d3aeb4656044927ed265498b9077 = $(`<div id="html_9517d3aeb4656044927ed265498b9077" style="width: 100.0%; height: 100.0%;">The Hudson Bay<br><a href="https://en.wikipedia.org/wiki/Hudson_Bay" target="_blank">Hudson Bay</a></div>`)[0];
+                popup_92019e7c7ac5e1fafb3655a977443e92.setContent(html_9517d3aeb4656044927ed265498b9077);
             
         
 
-        marker_d86985d11214d33c61df0e4aacb4bc33.bindPopup(popup_192cc366288df20441fd448c04ae92c8)
+        marker_411efc398e2c89c27e89cc56613f951a.bindPopup(popup_92019e7c7ac5e1fafb3655a977443e92)
         ;
 
         
     
     
-            marker_d86985d11214d33c61df0e4aacb4bc33.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_6a88009427029c6fd5dc233b2ad5e24b = L.marker(
+            var marker_5424cae4e8d417e01f7064a5cd6062a6 = L.marker(
                 [25.0, -90.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_839ab5403a9285d6800b9df971718ca7 = L.AwesomeMarkers.icon(
+            var icon_033c048a5e9eb0e709b3fc4d94781ec9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_6a88009427029c6fd5dc233b2ad5e24b.setIcon(icon_839ab5403a9285d6800b9df971718ca7);
+            marker_5424cae4e8d417e01f7064a5cd6062a6.setIcon(icon_033c048a5e9eb0e709b3fc4d94781ec9);
         
     
-        var popup_affeb313d5c6ee47076a78548920dcbb = L.popup({"maxWidth": "100%"});
+        var popup_e9342bfa2b5f798c9713c46f0da84244 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_d022aa14d1e552cb8f6ccd9757dea386 = $(`<div id="html_d022aa14d1e552cb8f6ccd9757dea386" style="width: 100.0%; height: 100.0%;">the Gulf of Mexico<br><a href="https://en.wikipedia.org/wiki/Gulf_of_Mexicotarget="_blank">the Gulf of Mexico</a></div>`)[0];
-                popup_affeb313d5c6ee47076a78548920dcbb.setContent(html_d022aa14d1e552cb8f6ccd9757dea386);
+                var html_6b2320128d887b9c56b41bb489fd7dd1 = $(`<div id="html_6b2320128d887b9c56b41bb489fd7dd1" style="width: 100.0%; height: 100.0%;">the Gulf of Mexico<br><a href="https://en.wikipedia.org/wiki/Gulf_of_Mexico" target="_blank">Gulf of Mexico</a></div>`)[0];
+                popup_e9342bfa2b5f798c9713c46f0da84244.setContent(html_6b2320128d887b9c56b41bb489fd7dd1);
             
         
 
-        marker_6a88009427029c6fd5dc233b2ad5e24b.bindPopup(popup_affeb313d5c6ee47076a78548920dcbb)
+        marker_5424cae4e8d417e01f7064a5cd6062a6.bindPopup(popup_e9342bfa2b5f798c9713c46f0da84244)
         ;
 
         
     
     
-            marker_6a88009427029c6fd5dc233b2ad5e24b.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_b972b1c375f2551e628af9e64340e8a3 = L.marker(
+            var marker_362df977ed34aaab623d9273b979057f = L.marker(
                 [15.0, -75.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_cf04371be0d1acbfc4c8f84187a80264 = L.AwesomeMarkers.icon(
+            var icon_e5b19c5c493027a7f6c4ce7028427b2f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_b972b1c375f2551e628af9e64340e8a3.setIcon(icon_cf04371be0d1acbfc4c8f84187a80264);
+            marker_362df977ed34aaab623d9273b979057f.setIcon(icon_e5b19c5c493027a7f6c4ce7028427b2f);
         
     
-        var popup_5cf3fae92a5a18430edaedb5919368c6 = L.popup({"maxWidth": "100%"});
+        var popup_022ef6dc439b2dbe9fe603f108f9e7ec = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_09207f3ea67cee12ce5a21362be58a9e = $(`<div id="html_09207f3ea67cee12ce5a21362be58a9e" style="width: 100.0%; height: 100.0%;">the Caribbean Sea<br><a href="https://en.wikipedia.org/wiki/Caribbean_Seatarget="_blank">the Caribbean Sea</a></div>`)[0];
-                popup_5cf3fae92a5a18430edaedb5919368c6.setContent(html_09207f3ea67cee12ce5a21362be58a9e);
+                var html_75d6da7b0b808b3de22059474086f32d = $(`<div id="html_75d6da7b0b808b3de22059474086f32d" style="width: 100.0%; height: 100.0%;">the Caribbean Sea<br><a href="https://en.wikipedia.org/wiki/Caribbean_Sea" target="_blank">Caribbean Sea</a></div>`)[0];
+                popup_022ef6dc439b2dbe9fe603f108f9e7ec.setContent(html_75d6da7b0b808b3de22059474086f32d);
             
         
 
-        marker_b972b1c375f2551e628af9e64340e8a3.bindPopup(popup_5cf3fae92a5a18430edaedb5919368c6)
+        marker_362df977ed34aaab623d9273b979057f.bindPopup(popup_022ef6dc439b2dbe9fe603f108f9e7ec)
         ;
 
         
     
     
-            marker_b972b1c375f2551e628af9e64340e8a3.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_119f237559229749d13c42f969d52564 = L.marker(
+            var marker_5f28e64c741ff056c575f0e5df4d560a = L.marker(
                 [0.0, -25.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_026cf672d65ee437993994372ca2b440 = L.AwesomeMarkers.icon(
+            var icon_776f5a57fc3be18bee1766e26699013b = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_119f237559229749d13c42f969d52564.setIcon(icon_026cf672d65ee437993994372ca2b440);
+            marker_5f28e64c741ff056c575f0e5df4d560a.setIcon(icon_776f5a57fc3be18bee1766e26699013b);
         
     
-        var popup_2e692764eb935739a3c5a009b41fd79e = L.popup({"maxWidth": "100%"});
+        var popup_526d92a3f20ffe98c1b752f6473ea8be = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_d515ce4cd3739026ecedef1cc217793b = $(`<div id="html_d515ce4cd3739026ecedef1cc217793b" style="width: 100.0%; height: 100.0%;">the Atlantic Ocean<br><a href="https://en.wikipedia.org/wiki/Atlantic_Oceantarget="_blank">the Atlantic Ocean</a></div>`)[0];
-                popup_2e692764eb935739a3c5a009b41fd79e.setContent(html_d515ce4cd3739026ecedef1cc217793b);
+                var html_89b978e665e9d428186d04b0cc1c431e = $(`<div id="html_89b978e665e9d428186d04b0cc1c431e" style="width: 100.0%; height: 100.0%;">the Atlantic Ocean<br><a href="https://en.wikipedia.org/wiki/Atlantic_Ocean" target="_blank">Atlantic Ocean</a></div>`)[0];
+                popup_526d92a3f20ffe98c1b752f6473ea8be.setContent(html_89b978e665e9d428186d04b0cc1c431e);
             
         
 
-        marker_119f237559229749d13c42f969d52564.bindPopup(popup_2e692764eb935739a3c5a009b41fd79e)
+        marker_5f28e64c741ff056c575f0e5df4d560a.bindPopup(popup_526d92a3f20ffe98c1b752f6473ea8be)
         ;
 
         
     
     
-            marker_119f237559229749d13c42f969d52564.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_faca0a02ca079c3e37a51ccd57ba921d = L.marker(
+            var marker_b6f3ce8a76bce06e0bca5253939efc56 = L.marker(
                 [-55.98, -67.28916667],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_389e1fd89399abe13410f0168315e22c = L.AwesomeMarkers.icon(
+            var icon_50ed06f00c2ff8f92bbde2b472aecfcf = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_faca0a02ca079c3e37a51ccd57ba921d.setIcon(icon_389e1fd89399abe13410f0168315e22c);
+            marker_b6f3ce8a76bce06e0bca5253939efc56.setIcon(icon_50ed06f00c2ff8f92bbde2b472aecfcf);
         
     
-        var popup_abf9ea9a50e23cbd7b26157d27f8fb6c = L.popup({"maxWidth": "100%"});
+        var popup_6ad2a26b5adb9f8cd4351ca0eade6ae4 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_f539bf150fd9961e952131fc75718678 = $(`<div id="html_f539bf150fd9961e952131fc75718678" style="width: 100.0%; height: 100.0%;">the Cape Horn<br><a href="https://en.wikipedia.org/wiki/Cape_Horntarget="_blank">the Cape Horn</a></div>`)[0];
-                popup_abf9ea9a50e23cbd7b26157d27f8fb6c.setContent(html_f539bf150fd9961e952131fc75718678);
+                var html_76cf644147132e01376acb664a1c3878 = $(`<div id="html_76cf644147132e01376acb664a1c3878" style="width: 100.0%; height: 100.0%;">the Cape Horn<br><a href="https://en.wikipedia.org/wiki/Cape_Horn" target="_blank">Cape Horn</a></div>`)[0];
+                popup_6ad2a26b5adb9f8cd4351ca0eade6ae4.setContent(html_76cf644147132e01376acb664a1c3878);
             
         
 
-        marker_faca0a02ca079c3e37a51ccd57ba921d.bindPopup(popup_abf9ea9a50e23cbd7b26157d27f8fb6c)
+        marker_b6f3ce8a76bce06e0bca5253939efc56.bindPopup(popup_6ad2a26b5adb9f8cd4351ca0eade6ae4)
         ;
 
         
     
     
-            marker_faca0a02ca079c3e37a51ccd57ba921d.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_232543de7bd605e8e1ac9d7185a4a34f = L.marker(
+            var marker_0b5e4b56e263be6cf2ccbc30e0bf5f9c = L.marker(
                 [0.0, 0.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_970c21f68f06ce3525f16359675efabf = L.AwesomeMarkers.icon(
+            var icon_276cbe6a8caec55f892a1a8f54350e86 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_232543de7bd605e8e1ac9d7185a4a34f.setIcon(icon_970c21f68f06ce3525f16359675efabf);
+            marker_0b5e4b56e263be6cf2ccbc30e0bf5f9c.setIcon(icon_276cbe6a8caec55f892a1a8f54350e86);
         
     
-        var popup_28bbee2f959139f4cb089ecf88777d03 = L.popup({"maxWidth": "100%"});
+        var popup_4ff469d78ba604efbd16857ce6861443 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_1f3157a717054eee87e22af3622722dd = $(`<div id="html_1f3157a717054eee87e22af3622722dd" style="width: 100.0%; height: 100.0%;">the Gulf of Guinea<br><a href="https://en.wikipedia.org/wiki/Gulf_of_Guineatarget="_blank">the Gulf of Guinea</a></div>`)[0];
-                popup_28bbee2f959139f4cb089ecf88777d03.setContent(html_1f3157a717054eee87e22af3622722dd);
+                var html_996c38a82d43f7dd10aa825098a6d7b9 = $(`<div id="html_996c38a82d43f7dd10aa825098a6d7b9" style="width: 100.0%; height: 100.0%;">the Gulf of Guinea<br><a href="https://en.wikipedia.org/wiki/Gulf_of_Guinea" target="_blank">Gulf of Guinea</a></div>`)[0];
+                popup_4ff469d78ba604efbd16857ce6861443.setContent(html_996c38a82d43f7dd10aa825098a6d7b9);
             
         
 
-        marker_232543de7bd605e8e1ac9d7185a4a34f.bindPopup(popup_28bbee2f959139f4cb089ecf88777d03)
+        marker_0b5e4b56e263be6cf2ccbc30e0bf5f9c.bindPopup(popup_4ff469d78ba604efbd16857ce6861443)
         ;
 
         
     
     
-            marker_232543de7bd605e8e1ac9d7185a4a34f.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_77a31f73b7c082af107eae85d1b3f54a = L.marker(
+            var marker_e5752ee8e3fd8935694383de380c1237 = L.marker(
                 [35.95, -5.5],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_30e9a065884a09dec2517a78ebe22cca = L.AwesomeMarkers.icon(
+            var icon_0dd7335c26e102d067342fb97fa1d845 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_77a31f73b7c082af107eae85d1b3f54a.setIcon(icon_30e9a065884a09dec2517a78ebe22cca);
+            marker_e5752ee8e3fd8935694383de380c1237.setIcon(icon_0dd7335c26e102d067342fb97fa1d845);
         
     
-        var popup_b8f7f2c3fcb42eb7e5cdb8f60147352e = L.popup({"maxWidth": "100%"});
+        var popup_dbb3b28648eebc628cf99949fab8d6e0 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_7aed49192b9f2bc67c91604e9f53fb26 = $(`<div id="html_7aed49192b9f2bc67c91604e9f53fb26" style="width: 100.0%; height: 100.0%;">the Strait of Gibraltar<br><a href="https://en.wikipedia.org/wiki/Strait_of_Gibraltartarget="_blank">the Strait of Gibraltar</a></div>`)[0];
-                popup_b8f7f2c3fcb42eb7e5cdb8f60147352e.setContent(html_7aed49192b9f2bc67c91604e9f53fb26);
+                var html_d381707592b48d588882fcce45ff576c = $(`<div id="html_d381707592b48d588882fcce45ff576c" style="width: 100.0%; height: 100.0%;">the Strait of Gibraltar<br><a href="https://en.wikipedia.org/wiki/Strait_of_Gibraltar" target="_blank">Strait of Gibraltar</a></div>`)[0];
+                popup_dbb3b28648eebc628cf99949fab8d6e0.setContent(html_d381707592b48d588882fcce45ff576c);
             
         
 
-        marker_77a31f73b7c082af107eae85d1b3f54a.bindPopup(popup_b8f7f2c3fcb42eb7e5cdb8f60147352e)
+        marker_e5752ee8e3fd8935694383de380c1237.bindPopup(popup_dbb3b28648eebc628cf99949fab8d6e0)
         ;
 
         
     
     
-            marker_77a31f73b7c082af107eae85d1b3f54a.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_18d82d53f4fd928014e68378746b864d = L.marker(
+            var marker_f33220e8954ba4c6b1af327ac1f44d79 = L.marker(
                 [56.0, 3.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_4fbe46e85ca2e1f4d4199cc1cf02abd6 = L.AwesomeMarkers.icon(
+            var icon_e8b12fbb887058c6d7c84e0a3b0bf3df = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_18d82d53f4fd928014e68378746b864d.setIcon(icon_4fbe46e85ca2e1f4d4199cc1cf02abd6);
+            marker_f33220e8954ba4c6b1af327ac1f44d79.setIcon(icon_e8b12fbb887058c6d7c84e0a3b0bf3df);
         
     
-        var popup_25e1d74a96369977511ade9a39213b04 = L.popup({"maxWidth": "100%"});
+        var popup_dfb3097f9cc6c1e2a8e49f66da0e0f1b = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_87fe2ef0c8662f5a15e833febd2b2216 = $(`<div id="html_87fe2ef0c8662f5a15e833febd2b2216" style="width: 100.0%; height: 100.0%;">the North Sea<br><a href="https://en.wikipedia.org/wiki/North_Seatarget="_blank">the North Sea</a></div>`)[0];
-                popup_25e1d74a96369977511ade9a39213b04.setContent(html_87fe2ef0c8662f5a15e833febd2b2216);
+                var html_2e58c22548d9cb5de638100803e97e8f = $(`<div id="html_2e58c22548d9cb5de638100803e97e8f" style="width: 100.0%; height: 100.0%;">the North Sea<br><a href="https://en.wikipedia.org/wiki/North_Sea" target="_blank">North Sea</a></div>`)[0];
+                popup_dfb3097f9cc6c1e2a8e49f66da0e0f1b.setContent(html_2e58c22548d9cb5de638100803e97e8f);
             
         
 
-        marker_18d82d53f4fd928014e68378746b864d.bindPopup(popup_25e1d74a96369977511ade9a39213b04)
+        marker_f33220e8954ba4c6b1af327ac1f44d79.bindPopup(popup_dfb3097f9cc6c1e2a8e49f66da0e0f1b)
         ;
 
         
     
     
-            marker_18d82d53f4fd928014e68378746b864d.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_ccb95028e25306d9505af35a002c9360 = L.marker(
+            var marker_8e4945f46212d6ff29bd40c87bd38f0e = L.marker(
                 [58.0, 20.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_24cf46730ae20cafff782d08a8a8df7d = L.AwesomeMarkers.icon(
+            var icon_ff2408288ace023e3fd7419138e31f32 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_ccb95028e25306d9505af35a002c9360.setIcon(icon_24cf46730ae20cafff782d08a8a8df7d);
+            marker_8e4945f46212d6ff29bd40c87bd38f0e.setIcon(icon_ff2408288ace023e3fd7419138e31f32);
         
     
-        var popup_88ff4d9f52f4b86313a58e1b7ef57b4d = L.popup({"maxWidth": "100%"});
+        var popup_a88c1031dcae0a22261458158eeb3f1d = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_fe984c4bb0f8fccd05e910deaec056ca = $(`<div id="html_fe984c4bb0f8fccd05e910deaec056ca" style="width: 100.0%; height: 100.0%;">the Baltic Sea<br><a href="https://en.wikipedia.org/wiki/Baltic_Seatarget="_blank">the Baltic Sea</a></div>`)[0];
-                popup_88ff4d9f52f4b86313a58e1b7ef57b4d.setContent(html_fe984c4bb0f8fccd05e910deaec056ca);
+                var html_35937fb7af52097d544d7a4edf66929b = $(`<div id="html_35937fb7af52097d544d7a4edf66929b" style="width: 100.0%; height: 100.0%;">the Baltic Sea<br><a href="https://en.wikipedia.org/wiki/Baltic_Sea" target="_blank">Baltic Sea</a></div>`)[0];
+                popup_a88c1031dcae0a22261458158eeb3f1d.setContent(html_35937fb7af52097d544d7a4edf66929b);
             
         
 
-        marker_ccb95028e25306d9505af35a002c9360.bindPopup(popup_88ff4d9f52f4b86313a58e1b7ef57b4d)
+        marker_8e4945f46212d6ff29bd40c87bd38f0e.bindPopup(popup_a88c1031dcae0a22261458158eeb3f1d)
         ;
 
         
     
     
-            marker_ccb95028e25306d9505af35a002c9360.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_2493d8ad011fd248545a3fdb400b70de = L.marker(
+            var marker_07aa9bcc4ee6f66da8c658ae96bb2081 = L.marker(
                 [71.1725, 25.78444444],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_c2b546278acea417ea5d0582a3db2adf = L.AwesomeMarkers.icon(
+            var icon_00966d38283e0746a9bbb7204719c459 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_2493d8ad011fd248545a3fdb400b70de.setIcon(icon_c2b546278acea417ea5d0582a3db2adf);
+            marker_07aa9bcc4ee6f66da8c658ae96bb2081.setIcon(icon_00966d38283e0746a9bbb7204719c459);
         
     
-        var popup_6b4ba91cb2218f416a4031fa89486633 = L.popup({"maxWidth": "100%"});
+        var popup_ac460ae39510c1a896ff07afbed0f244 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_815a141d0f9707e0cd5656b1539f977a = $(`<div id="html_815a141d0f9707e0cd5656b1539f977a" style="width: 100.0%; height: 100.0%;">the North Cape<br><a href="https://en.wikipedia.org/wiki/North_Cape_(Norway)target="_blank">the North Cape</a></div>`)[0];
-                popup_6b4ba91cb2218f416a4031fa89486633.setContent(html_815a141d0f9707e0cd5656b1539f977a);
+                var html_df4b94786392a1576ca13fd03c74c8e9 = $(`<div id="html_df4b94786392a1576ca13fd03c74c8e9" style="width: 100.0%; height: 100.0%;">the North Cape<br><a href="https://en.wikipedia.org/wiki/North_Cape_(Norway)" target="_blank">North Cape (Norway)</a></div>`)[0];
+                popup_ac460ae39510c1a896ff07afbed0f244.setContent(html_df4b94786392a1576ca13fd03c74c8e9);
             
         
 
-        marker_2493d8ad011fd248545a3fdb400b70de.bindPopup(popup_6b4ba91cb2218f416a4031fa89486633)
+        marker_07aa9bcc4ee6f66da8c658ae96bb2081.bindPopup(popup_ac460ae39510c1a896ff07afbed0f244)
         ;
 
         
     
     
-            marker_2493d8ad011fd248545a3fdb400b70de.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_3ac269dc8f5a518911082d29e0a14197 = L.marker(
+            var marker_c468302690678ddea08e4ec8dcf23723 = L.marker(
                 [-34.35805556, 18.47555556],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_b93dff1b3d8164140abf6455aebce028 = L.AwesomeMarkers.icon(
+            var icon_3ead12af1463914d3da00abfd8098bcb = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_3ac269dc8f5a518911082d29e0a14197.setIcon(icon_b93dff1b3d8164140abf6455aebce028);
+            marker_c468302690678ddea08e4ec8dcf23723.setIcon(icon_3ead12af1463914d3da00abfd8098bcb);
         
     
-        var popup_51ef28443423f47fd43cf19201f0c56d = L.popup({"maxWidth": "100%"});
+        var popup_3268997db80bfb502d904365c590118a = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_2889bfb4dcb8a391ec9f80572b3ac46f = $(`<div id="html_2889bfb4dcb8a391ec9f80572b3ac46f" style="width: 100.0%; height: 100.0%;">the Cape of Good Hope<br><a href="https://en.wikipedia.org/wiki/Cape_of_Good_Hopetarget="_blank">the Cape of Good Hope</a></div>`)[0];
-                popup_51ef28443423f47fd43cf19201f0c56d.setContent(html_2889bfb4dcb8a391ec9f80572b3ac46f);
+                var html_1b4fd51921e8de76ae083ec2c7bb5ae1 = $(`<div id="html_1b4fd51921e8de76ae083ec2c7bb5ae1" style="width: 100.0%; height: 100.0%;">the Cape of Good Hope<br><a href="https://en.wikipedia.org/wiki/Cape_of_Good_Hope" target="_blank">Cape of Good Hope</a></div>`)[0];
+                popup_3268997db80bfb502d904365c590118a.setContent(html_1b4fd51921e8de76ae083ec2c7bb5ae1);
             
         
 
-        marker_3ac269dc8f5a518911082d29e0a14197.bindPopup(popup_51ef28443423f47fd43cf19201f0c56d)
+        marker_c468302690678ddea08e4ec8dcf23723.bindPopup(popup_3268997db80bfb502d904365c590118a)
         ;
 
         
     
     
-            marker_3ac269dc8f5a518911082d29e0a14197.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_4b7653584e44d10c9d32b76e87b61bd7 = L.marker(
+            var marker_56d4cf649114a5e6b87f5a9400b374f9 = L.marker(
                 [35.0, 18.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_e09533190da122b8a41e153e6fe81904 = L.AwesomeMarkers.icon(
+            var icon_1f8381ef3eddef88889ba6e8af50010a = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_4b7653584e44d10c9d32b76e87b61bd7.setIcon(icon_e09533190da122b8a41e153e6fe81904);
+            marker_56d4cf649114a5e6b87f5a9400b374f9.setIcon(icon_1f8381ef3eddef88889ba6e8af50010a);
         
     
-        var popup_04d280dc7ce1cf3f014e1413a872fc34 = L.popup({"maxWidth": "100%"});
+        var popup_b05604da0be51c9082c8b24b0e3a7beb = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_5597828ff35cc0e54423dfaf8f027786 = $(`<div id="html_5597828ff35cc0e54423dfaf8f027786" style="width: 100.0%; height: 100.0%;">the Mediterranean Sea<br><a href="https://en.wikipedia.org/wiki/Mediterranean_Seatarget="_blank">the Mediterranean Sea</a></div>`)[0];
-                popup_04d280dc7ce1cf3f014e1413a872fc34.setContent(html_5597828ff35cc0e54423dfaf8f027786);
+                var html_96ff03f062a1e7faf7dd88fe51ccbe7e = $(`<div id="html_96ff03f062a1e7faf7dd88fe51ccbe7e" style="width: 100.0%; height: 100.0%;">the Mediterranean Sea<br><a href="https://en.wikipedia.org/wiki/Mediterranean_Sea" target="_blank">Mediterranean Sea</a></div>`)[0];
+                popup_b05604da0be51c9082c8b24b0e3a7beb.setContent(html_96ff03f062a1e7faf7dd88fe51ccbe7e);
             
         
 
-        marker_4b7653584e44d10c9d32b76e87b61bd7.bindPopup(popup_04d280dc7ce1cf3f014e1413a872fc34)
+        marker_56d4cf649114a5e6b87f5a9400b374f9.bindPopup(popup_b05604da0be51c9082c8b24b0e3a7beb)
         ;
 
         
     
     
-            marker_4b7653584e44d10c9d32b76e87b61bd7.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_8afb5454218f39c45399e2361440f4a6 = L.marker(
+            var marker_fbdb6989b5c57af8a9c3244fbc16ffb2 = L.marker(
                 [38.0, 19.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_282229f7334ec14f26f1c3b72a0079a3 = L.AwesomeMarkers.icon(
+            var icon_b71522153c798227fa3cd0cbf903c6d1 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_8afb5454218f39c45399e2361440f4a6.setIcon(icon_282229f7334ec14f26f1c3b72a0079a3);
+            marker_fbdb6989b5c57af8a9c3244fbc16ffb2.setIcon(icon_b71522153c798227fa3cd0cbf903c6d1);
         
     
-        var popup_45b2c0c867133b2da0950216dbdadad8 = L.popup({"maxWidth": "100%"});
+        var popup_5c375dd1dd44a7bc04a8f5b5e904979f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_1779c1213e2714de05400654acfbdb24 = $(`<div id="html_1779c1213e2714de05400654acfbdb24" style="width: 100.0%; height: 100.0%;">the Ionian Sea<br><a href="https://en.wikipedia.org/wiki/Ionian_Seatarget="_blank">the Ionian Sea</a></div>`)[0];
-                popup_45b2c0c867133b2da0950216dbdadad8.setContent(html_1779c1213e2714de05400654acfbdb24);
+                var html_2dfa7b7e56fc30f5ff31d771cde5d5c6 = $(`<div id="html_2dfa7b7e56fc30f5ff31d771cde5d5c6" style="width: 100.0%; height: 100.0%;">the Ionian Sea<br><a href="https://en.wikipedia.org/wiki/Ionian_Sea" target="_blank">Ionian Sea</a></div>`)[0];
+                popup_5c375dd1dd44a7bc04a8f5b5e904979f.setContent(html_2dfa7b7e56fc30f5ff31d771cde5d5c6);
             
         
 
-        marker_8afb5454218f39c45399e2361440f4a6.bindPopup(popup_45b2c0c867133b2da0950216dbdadad8)
+        marker_fbdb6989b5c57af8a9c3244fbc16ffb2.bindPopup(popup_5c375dd1dd44a7bc04a8f5b5e904979f)
         ;
 
         
     
     
-            marker_8afb5454218f39c45399e2361440f4a6.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_2324f2f575c6145ef501b95c482ae8bf = L.marker(
+            var marker_3cbfb9f9fc1ee4b1c98ac5f1589bc722 = L.marker(
                 [43.0, 15.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_333500796b91bd4e7adb5a6cb72fd389 = L.AwesomeMarkers.icon(
+            var icon_9ff6e09fc5d6aff29f80200d5a1c574c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_2324f2f575c6145ef501b95c482ae8bf.setIcon(icon_333500796b91bd4e7adb5a6cb72fd389);
+            marker_3cbfb9f9fc1ee4b1c98ac5f1589bc722.setIcon(icon_9ff6e09fc5d6aff29f80200d5a1c574c);
         
     
-        var popup_36fcf18f8bca997d7dc99a5cd612eaeb = L.popup({"maxWidth": "100%"});
+        var popup_0cd52f6455adb213c25c292f219234f0 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a4e56b8d5f769eea59353f611bf2e3ac = $(`<div id="html_a4e56b8d5f769eea59353f611bf2e3ac" style="width: 100.0%; height: 100.0%;">the Adriatic Sea<br><a href="https://en.wikipedia.org/wiki/Adriatic_Seatarget="_blank">the Adriatic Sea</a></div>`)[0];
-                popup_36fcf18f8bca997d7dc99a5cd612eaeb.setContent(html_a4e56b8d5f769eea59353f611bf2e3ac);
+                var html_ccf7e27e2ae46667b996f51500d9ee7e = $(`<div id="html_ccf7e27e2ae46667b996f51500d9ee7e" style="width: 100.0%; height: 100.0%;">the Adriatic Sea<br><a href="https://en.wikipedia.org/wiki/Adriatic_Sea" target="_blank">Adriatic Sea</a></div>`)[0];
+                popup_0cd52f6455adb213c25c292f219234f0.setContent(html_ccf7e27e2ae46667b996f51500d9ee7e);
             
         
 
-        marker_2324f2f575c6145ef501b95c482ae8bf.bindPopup(popup_36fcf18f8bca997d7dc99a5cd612eaeb)
+        marker_3cbfb9f9fc1ee4b1c98ac5f1589bc722.bindPopup(popup_0cd52f6455adb213c25c292f219234f0)
         ;
 
         
     
     
-            marker_2324f2f575c6145ef501b95c482ae8bf.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_a7c17614954355ea0ad53a3aa6a881f6 = L.marker(
+            var marker_896aacd00698bff115a285d3968c6fc5 = L.marker(
                 [39.0, 25.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_3b203899c2ba59b2d9cbb1e67cec878f = L.AwesomeMarkers.icon(
+            var icon_ec1ef5a5985cc9f4efe9bd5f64fb3a56 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_a7c17614954355ea0ad53a3aa6a881f6.setIcon(icon_3b203899c2ba59b2d9cbb1e67cec878f);
+            marker_896aacd00698bff115a285d3968c6fc5.setIcon(icon_ec1ef5a5985cc9f4efe9bd5f64fb3a56);
         
     
-        var popup_a52a5e6532ea9de82a6333368ffef92c = L.popup({"maxWidth": "100%"});
+        var popup_78d7d949b66b97857894d9759a70da37 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_6df87f1d2ec7f1d14dd9e68a0c7659fd = $(`<div id="html_6df87f1d2ec7f1d14dd9e68a0c7659fd" style="width: 100.0%; height: 100.0%;">the Aegean Sea<br><a href="https://en.wikipedia.org/wiki/Aegean_Seatarget="_blank">the Aegean Sea</a></div>`)[0];
-                popup_a52a5e6532ea9de82a6333368ffef92c.setContent(html_6df87f1d2ec7f1d14dd9e68a0c7659fd);
+                var html_052eb32693fda2bb0f8ad6e8205fcf0e = $(`<div id="html_052eb32693fda2bb0f8ad6e8205fcf0e" style="width: 100.0%; height: 100.0%;">the Aegean Sea<br><a href="https://en.wikipedia.org/wiki/Aegean_Sea" target="_blank">Aegean Sea</a></div>`)[0];
+                popup_78d7d949b66b97857894d9759a70da37.setContent(html_052eb32693fda2bb0f8ad6e8205fcf0e);
             
         
 
-        marker_a7c17614954355ea0ad53a3aa6a881f6.bindPopup(popup_a52a5e6532ea9de82a6333368ffef92c)
+        marker_896aacd00698bff115a285d3968c6fc5.bindPopup(popup_78d7d949b66b97857894d9759a70da37)
         ;
 
         
     
     
-            marker_a7c17614954355ea0ad53a3aa6a881f6.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_1b9524405a53a579255a2a361d4a9360 = L.marker(
+            var marker_1eb31172d41de1f2b945328acc29f79c = L.marker(
                 [44.0, 35.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_c96df216f9d971424c403499dd8ca3a7 = L.AwesomeMarkers.icon(
+            var icon_35a7a0e049c94aac5ca666d90324aced = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_1b9524405a53a579255a2a361d4a9360.setIcon(icon_c96df216f9d971424c403499dd8ca3a7);
+            marker_1eb31172d41de1f2b945328acc29f79c.setIcon(icon_35a7a0e049c94aac5ca666d90324aced);
         
     
-        var popup_ea2265fb369726a55381ee1976776fbf = L.popup({"maxWidth": "100%"});
+        var popup_2aea923bf266d3767d49135e723e9d48 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_1c18585e9088954ae761905d989e3376 = $(`<div id="html_1c18585e9088954ae761905d989e3376" style="width: 100.0%; height: 100.0%;">the Black Sea<br><a href="https://en.wikipedia.org/wiki/Black_Seatarget="_blank">the Black Sea</a></div>`)[0];
-                popup_ea2265fb369726a55381ee1976776fbf.setContent(html_1c18585e9088954ae761905d989e3376);
+                var html_a6b6ad49eb30f2f6031b7dd89d02525f = $(`<div id="html_a6b6ad49eb30f2f6031b7dd89d02525f" style="width: 100.0%; height: 100.0%;">the Black Sea<br><a href="https://en.wikipedia.org/wiki/Black_Sea" target="_blank">Black Sea</a></div>`)[0];
+                popup_2aea923bf266d3767d49135e723e9d48.setContent(html_a6b6ad49eb30f2f6031b7dd89d02525f);
             
         
 
-        marker_1b9524405a53a579255a2a361d4a9360.bindPopup(popup_ea2265fb369726a55381ee1976776fbf)
+        marker_1eb31172d41de1f2b945328acc29f79c.bindPopup(popup_2aea923bf266d3767d49135e723e9d48)
         ;
 
         
     
     
-            marker_1b9524405a53a579255a2a361d4a9360.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_942f8c858d807b8367705f7a8c83c8ca = L.marker(
+            var marker_1b750a96e203de620e70e9ed6284bed7 = L.marker(
                 [30.705, 32.34416667],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_ed857f280fca4894c67e84d541c8b614 = L.AwesomeMarkers.icon(
+            var icon_689587c7e683109679c8a5e6916b89b2 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_942f8c858d807b8367705f7a8c83c8ca.setIcon(icon_ed857f280fca4894c67e84d541c8b614);
+            marker_1b750a96e203de620e70e9ed6284bed7.setIcon(icon_689587c7e683109679c8a5e6916b89b2);
         
     
-        var popup_6362ebe103d3cb53a88f3de2b2bf0b88 = L.popup({"maxWidth": "100%"});
+        var popup_d2c3ca7cbe0f637924f3ca53a29fcea8 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_4a95cc8b3893eb3b0935ab8628fe2530 = $(`<div id="html_4a95cc8b3893eb3b0935ab8628fe2530" style="width: 100.0%; height: 100.0%;">the Suez Canal<br><a href="https://en.wikipedia.org/wiki/Suez_Canaltarget="_blank">the Suez Canal</a></div>`)[0];
-                popup_6362ebe103d3cb53a88f3de2b2bf0b88.setContent(html_4a95cc8b3893eb3b0935ab8628fe2530);
+                var html_135d66deaf91a357b53433b5dc57982e = $(`<div id="html_135d66deaf91a357b53433b5dc57982e" style="width: 100.0%; height: 100.0%;">the Suez Canal<br><a href="https://en.wikipedia.org/wiki/Suez_Canal" target="_blank">Suez Canal</a></div>`)[0];
+                popup_d2c3ca7cbe0f637924f3ca53a29fcea8.setContent(html_135d66deaf91a357b53433b5dc57982e);
             
         
 
-        marker_942f8c858d807b8367705f7a8c83c8ca.bindPopup(popup_6362ebe103d3cb53a88f3de2b2bf0b88)
+        marker_1b750a96e203de620e70e9ed6284bed7.bindPopup(popup_d2c3ca7cbe0f637924f3ca53a29fcea8)
         ;
 
         
     
     
-            marker_942f8c858d807b8367705f7a8c83c8ca.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_e619eb4036aee1ade8cd6943b3305c01 = L.marker(
+            var marker_202e924c3807008dbb57cc58ec6e7bd7 = L.marker(
                 [22.0, 38.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_e833efdf539ae744c1c4ec56796ade33 = L.AwesomeMarkers.icon(
+            var icon_a5cc04971cf16d075f629ac84a8410bf = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_e619eb4036aee1ade8cd6943b3305c01.setIcon(icon_e833efdf539ae744c1c4ec56796ade33);
+            marker_202e924c3807008dbb57cc58ec6e7bd7.setIcon(icon_a5cc04971cf16d075f629ac84a8410bf);
         
     
-        var popup_24b09d8edc62fd5d4f44e54ed835bbfd = L.popup({"maxWidth": "100%"});
+        var popup_f649b4ca8f733278cbe3094eff888105 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_af6c854cf4509a8988ab1ff35030c0e3 = $(`<div id="html_af6c854cf4509a8988ab1ff35030c0e3" style="width: 100.0%; height: 100.0%;">the Red Sea<br><a href="https://en.wikipedia.org/wiki/Red_Seatarget="_blank">the Red Sea</a></div>`)[0];
-                popup_24b09d8edc62fd5d4f44e54ed835bbfd.setContent(html_af6c854cf4509a8988ab1ff35030c0e3);
+                var html_80f0b0f203f3ce3ba9fa148bc94fe2d6 = $(`<div id="html_80f0b0f203f3ce3ba9fa148bc94fe2d6" style="width: 100.0%; height: 100.0%;">the Red Sea<br><a href="https://en.wikipedia.org/wiki/Red_Sea" target="_blank">Red Sea</a></div>`)[0];
+                popup_f649b4ca8f733278cbe3094eff888105.setContent(html_80f0b0f203f3ce3ba9fa148bc94fe2d6);
             
         
 
-        marker_e619eb4036aee1ade8cd6943b3305c01.bindPopup(popup_24b09d8edc62fd5d4f44e54ed835bbfd)
+        marker_202e924c3807008dbb57cc58ec6e7bd7.bindPopup(popup_f649b4ca8f733278cbe3094eff888105)
         ;
 
         
     
     
-            marker_e619eb4036aee1ade8cd6943b3305c01.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_8f567d1ddf3412be0fc611f49775a1ad = L.marker(
+            var marker_920300b01845da76f6e615b33c97cc2e = L.marker(
                 [12.58333333, 43.33333333],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_9819447f20f2afc796f3a3c825bf43ec = L.AwesomeMarkers.icon(
+            var icon_b6cc2d02123e682fad14d8246bf3464f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_8f567d1ddf3412be0fc611f49775a1ad.setIcon(icon_9819447f20f2afc796f3a3c825bf43ec);
+            marker_920300b01845da76f6e615b33c97cc2e.setIcon(icon_b6cc2d02123e682fad14d8246bf3464f);
         
     
-        var popup_4b5b01ed06e803df79d023290faa310c = L.popup({"maxWidth": "100%"});
+        var popup_f1a6e299439927aa884093b3e5cde491 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_e335d977b3ddd43ab5a6f2e84309b6c1 = $(`<div id="html_e335d977b3ddd43ab5a6f2e84309b6c1" style="width: 100.0%; height: 100.0%;">Bab el-Mandeb<br><a href="https://en.wikipedia.org/wiki/Bab-el-Mandebtarget="_blank">Bab el-Mandeb</a></div>`)[0];
-                popup_4b5b01ed06e803df79d023290faa310c.setContent(html_e335d977b3ddd43ab5a6f2e84309b6c1);
+                var html_ad82dd2f7546c56c3fb590c1e9071de4 = $(`<div id="html_ad82dd2f7546c56c3fb590c1e9071de4" style="width: 100.0%; height: 100.0%;">Bab el-Mandeb<br><a href="https://en.wikipedia.org/wiki/Bab-el-Mandeb" target="_blank">Bab-el-Mandeb</a></div>`)[0];
+                popup_f1a6e299439927aa884093b3e5cde491.setContent(html_ad82dd2f7546c56c3fb590c1e9071de4);
             
         
 
-        marker_8f567d1ddf3412be0fc611f49775a1ad.bindPopup(popup_4b5b01ed06e803df79d023290faa310c)
+        marker_920300b01845da76f6e615b33c97cc2e.bindPopup(popup_f1a6e299439927aa884093b3e5cde491)
         ;
 
         
     
     
-            marker_8f567d1ddf3412be0fc611f49775a1ad.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_6e023581ad04cb9263bda19d2b4e6e62 = L.marker(
+            var marker_b99b848a1cc7872db2dbaf6b83f6670f = L.marker(
                 [26.6, 56.5],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_a51d3233673d0938babfc42e092b8a2e = L.AwesomeMarkers.icon(
+            var icon_80242c8d265b23754588b6750c110a26 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_6e023581ad04cb9263bda19d2b4e6e62.setIcon(icon_a51d3233673d0938babfc42e092b8a2e);
+            marker_b99b848a1cc7872db2dbaf6b83f6670f.setIcon(icon_80242c8d265b23754588b6750c110a26);
         
     
-        var popup_93894b3f8d3d45cf103d5267a8c75281 = L.popup({"maxWidth": "100%"});
+        var popup_5775294063092206927a78eb9bf6b5ab = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_06f77ebf4756f8eac61551b716059d20 = $(`<div id="html_06f77ebf4756f8eac61551b716059d20" style="width: 100.0%; height: 100.0%;">the Hormuz Strait<br><a href="https://en.wikipedia.org/wiki/Strait_of_Hormuztarget="_blank">the Hormuz Strait</a></div>`)[0];
-                popup_93894b3f8d3d45cf103d5267a8c75281.setContent(html_06f77ebf4756f8eac61551b716059d20);
+                var html_4b697abd5003184f13c50c45c27340d2 = $(`<div id="html_4b697abd5003184f13c50c45c27340d2" style="width: 100.0%; height: 100.0%;">the Hormuz Strait<br><a href="https://en.wikipedia.org/wiki/Strait_of_Hormuz" target="_blank">Strait of Hormuz</a></div>`)[0];
+                popup_5775294063092206927a78eb9bf6b5ab.setContent(html_4b697abd5003184f13c50c45c27340d2);
             
         
 
-        marker_6e023581ad04cb9263bda19d2b4e6e62.bindPopup(popup_93894b3f8d3d45cf103d5267a8c75281)
+        marker_b99b848a1cc7872db2dbaf6b83f6670f.bindPopup(popup_5775294063092206927a78eb9bf6b5ab)
         ;
 
         
     
     
-            marker_6e023581ad04cb9263bda19d2b4e6e62.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_de2be60492ea22d327a9d7f4a574c0b8 = L.marker(
+            var marker_b33037b3b9a35217648a2bf9cea75b0e = L.marker(
                 [12.0, 48.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_05328b9365fbf4330bdb0c5f8049ddd6 = L.AwesomeMarkers.icon(
+            var icon_2663c61981a4877155ba300d91f75381 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_de2be60492ea22d327a9d7f4a574c0b8.setIcon(icon_05328b9365fbf4330bdb0c5f8049ddd6);
+            marker_b33037b3b9a35217648a2bf9cea75b0e.setIcon(icon_2663c61981a4877155ba300d91f75381);
         
     
-        var popup_c0f81ce38adc75582f39a714c70e83ce = L.popup({"maxWidth": "100%"});
+        var popup_cfeaa8c985fcf010f590b1ebc72f5909 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_37a289fd318d4e106ee02d5d2e9a6508 = $(`<div id="html_37a289fd318d4e106ee02d5d2e9a6508" style="width: 100.0%; height: 100.0%;">the Gulf of Aden<br><a href="https://en.wikipedia.org/wiki/Gulf_of_Adentarget="_blank">the Gulf of Aden</a></div>`)[0];
-                popup_c0f81ce38adc75582f39a714c70e83ce.setContent(html_37a289fd318d4e106ee02d5d2e9a6508);
+                var html_175b8ca30ed08c20cf0e02522b4ce6fe = $(`<div id="html_175b8ca30ed08c20cf0e02522b4ce6fe" style="width: 100.0%; height: 100.0%;">the Gulf of Aden<br><a href="https://en.wikipedia.org/wiki/Gulf_of_Aden" target="_blank">Gulf of Aden</a></div>`)[0];
+                popup_cfeaa8c985fcf010f590b1ebc72f5909.setContent(html_175b8ca30ed08c20cf0e02522b4ce6fe);
             
         
 
-        marker_de2be60492ea22d327a9d7f4a574c0b8.bindPopup(popup_c0f81ce38adc75582f39a714c70e83ce)
+        marker_b33037b3b9a35217648a2bf9cea75b0e.bindPopup(popup_cfeaa8c985fcf010f590b1ebc72f5909)
         ;
 
         
     
     
-            marker_de2be60492ea22d327a9d7f4a574c0b8.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_08e8253d248bd5d9d40dcd6394d340b1 = L.marker(
+            var marker_23a2cdb7d3645cf7e18dba4ab0fb62df = L.marker(
                 [14.0, 65.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_4ed96a0d525e8a512dc3acc4dee6b090 = L.AwesomeMarkers.icon(
+            var icon_56196bfbc05fec5ed1c993dec2569860 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_08e8253d248bd5d9d40dcd6394d340b1.setIcon(icon_4ed96a0d525e8a512dc3acc4dee6b090);
+            marker_23a2cdb7d3645cf7e18dba4ab0fb62df.setIcon(icon_56196bfbc05fec5ed1c993dec2569860);
         
     
-        var popup_02500899eb578b6876ab2421ea6369a3 = L.popup({"maxWidth": "100%"});
+        var popup_e4c095472f53b545a5c5a01a7a0b44d9 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_355c91791f4c432ff9347829b29b7167 = $(`<div id="html_355c91791f4c432ff9347829b29b7167" style="width: 100.0%; height: 100.0%;">the Arabian Sea<br><a href="https://en.wikipedia.org/wiki/Arabian_Seatarget="_blank">the Arabian Sea</a></div>`)[0];
-                popup_02500899eb578b6876ab2421ea6369a3.setContent(html_355c91791f4c432ff9347829b29b7167);
+                var html_8bcb697e0683424175aee5650709b536 = $(`<div id="html_8bcb697e0683424175aee5650709b536" style="width: 100.0%; height: 100.0%;">the Arabian Sea<br><a href="https://en.wikipedia.org/wiki/Arabian_Sea" target="_blank">Arabian Sea</a></div>`)[0];
+                popup_e4c095472f53b545a5c5a01a7a0b44d9.setContent(html_8bcb697e0683424175aee5650709b536);
             
         
 
-        marker_08e8253d248bd5d9d40dcd6394d340b1.bindPopup(popup_02500899eb578b6876ab2421ea6369a3)
+        marker_23a2cdb7d3645cf7e18dba4ab0fb62df.bindPopup(popup_e4c095472f53b545a5c5a01a7a0b44d9)
         ;
 
         
     
     
-            marker_08e8253d248bd5d9d40dcd6394d340b1.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_b1e657d142cb7ce47320992807744009 = L.marker(
+            var marker_faa7f963ba8c8fbb5f2ba5ed56b56467 = L.marker(
                 [26.0, 52.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_0be7d312bad4c87a82c0ae62e955f897 = L.AwesomeMarkers.icon(
+            var icon_89a80036f3443bbe604218524e4a8807 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_b1e657d142cb7ce47320992807744009.setIcon(icon_0be7d312bad4c87a82c0ae62e955f897);
+            marker_faa7f963ba8c8fbb5f2ba5ed56b56467.setIcon(icon_89a80036f3443bbe604218524e4a8807);
         
     
-        var popup_dacfd069a23377c32691a461a0ee997b = L.popup({"maxWidth": "100%"});
+        var popup_e032a6e4fe86c32a089c1c6b65ba80c1 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_82b583f80ae547f13c5025c58b95d5da = $(`<div id="html_82b583f80ae547f13c5025c58b95d5da" style="width: 100.0%; height: 100.0%;">the Persian Gulf<br><a href="https://en.wikipedia.org/wiki/Persian_Gulftarget="_blank">the Persian Gulf</a></div>`)[0];
-                popup_dacfd069a23377c32691a461a0ee997b.setContent(html_82b583f80ae547f13c5025c58b95d5da);
+                var html_a02fdfa083d4d0653dc219dcffa53c73 = $(`<div id="html_a02fdfa083d4d0653dc219dcffa53c73" style="width: 100.0%; height: 100.0%;">the Persian Gulf<br><a href="https://en.wikipedia.org/wiki/Persian_Gulf" target="_blank">Persian Gulf</a></div>`)[0];
+                popup_e032a6e4fe86c32a089c1c6b65ba80c1.setContent(html_a02fdfa083d4d0653dc219dcffa53c73);
             
         
 
-        marker_b1e657d142cb7ce47320992807744009.bindPopup(popup_dacfd069a23377c32691a461a0ee997b)
+        marker_faa7f963ba8c8fbb5f2ba5ed56b56467.bindPopup(popup_e032a6e4fe86c32a089c1c6b65ba80c1)
         ;
 
         
     
     
-            marker_b1e657d142cb7ce47320992807744009.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_4127d41db2febbe30f8f713af443a9f3 = L.marker(
+            var marker_0bdae1323f613b5cab101b3ddf95b65f = L.marker(
                 [-20.0, 80.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_93d0c934e29d170fedf87c8c5e0a8449 = L.AwesomeMarkers.icon(
+            var icon_d43e43fc3707b94250ba75c913cab3b5 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_4127d41db2febbe30f8f713af443a9f3.setIcon(icon_93d0c934e29d170fedf87c8c5e0a8449);
+            marker_0bdae1323f613b5cab101b3ddf95b65f.setIcon(icon_d43e43fc3707b94250ba75c913cab3b5);
         
     
-        var popup_c81e4f9974304c312ff6fc1063860366 = L.popup({"maxWidth": "100%"});
+        var popup_3330cff99a96a7c6b8b80baa0b10b267 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_85b871d114e2b9f0f843fb50bda67bc7 = $(`<div id="html_85b871d114e2b9f0f843fb50bda67bc7" style="width: 100.0%; height: 100.0%;">the Indian Ocean<br><a href="https://en.wikipedia.org/wiki/Indian_Oceantarget="_blank">the Indian Ocean</a></div>`)[0];
-                popup_c81e4f9974304c312ff6fc1063860366.setContent(html_85b871d114e2b9f0f843fb50bda67bc7);
+                var html_2b4b280bf6f7702f592317124b280dc4 = $(`<div id="html_2b4b280bf6f7702f592317124b280dc4" style="width: 100.0%; height: 100.0%;">the Indian Ocean<br><a href="https://en.wikipedia.org/wiki/Indian_Ocean" target="_blank">Indian Ocean</a></div>`)[0];
+                popup_3330cff99a96a7c6b8b80baa0b10b267.setContent(html_2b4b280bf6f7702f592317124b280dc4);
             
         
 
-        marker_4127d41db2febbe30f8f713af443a9f3.bindPopup(popup_c81e4f9974304c312ff6fc1063860366)
+        marker_0bdae1323f613b5cab101b3ddf95b65f.bindPopup(popup_3330cff99a96a7c6b8b80baa0b10b267)
         ;
 
         
     
     
-            marker_4127d41db2febbe30f8f713af443a9f3.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_658758944e06ae355343a21605714080 = L.marker(
-                [15.0, 77.0],
-                {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
-        
-    
-            var icon_503cf35873ed429134ebdf5ce4cdf708 = L.AwesomeMarkers.icon(
-                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
-            );
-            marker_658758944e06ae355343a21605714080.setIcon(icon_503cf35873ed429134ebdf5ce4cdf708);
-        
-    
-        var popup_21d223fc1dce9e829642b4173b02a45e = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_df084781c43c23cdca74245a4555a9ff = $(`<div id="html_df084781c43c23cdca74245a4555a9ff" style="width: 100.0%; height: 100.0%;">the Deccan Plateau<br><a href="https://en.wikipedia.org/wiki/Deccan_Plateautarget="_blank">the Deccan Plateau</a></div>`)[0];
-                popup_21d223fc1dce9e829642b4173b02a45e.setContent(html_df084781c43c23cdca74245a4555a9ff);
-            
-        
-
-        marker_658758944e06ae355343a21605714080.bindPopup(popup_21d223fc1dce9e829642b4173b02a45e)
-        ;
-
-        
-    
-    
-            marker_658758944e06ae355343a21605714080.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_75c7cb870bd22f8ca02c5e68d01b00d1 = L.marker(
+            var marker_51b6d26284880c9ec7f5490000161e95 = L.marker(
                 [15.0, 88.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_6ad1b8019f40585fb3ba147eadfae06e = L.AwesomeMarkers.icon(
+            var icon_b9b564467621827e9ab7520f9ff7aba4 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_75c7cb870bd22f8ca02c5e68d01b00d1.setIcon(icon_6ad1b8019f40585fb3ba147eadfae06e);
+            marker_51b6d26284880c9ec7f5490000161e95.setIcon(icon_b9b564467621827e9ab7520f9ff7aba4);
         
     
-        var popup_f5022acdc183b174b08f5baddccfe2ca = L.popup({"maxWidth": "100%"});
+        var popup_9368d156a60b474719a211e7cc4e2ad4 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c3f402bd7b4526840c753305d8f83258 = $(`<div id="html_c3f402bd7b4526840c753305d8f83258" style="width: 100.0%; height: 100.0%;">the Bay of Bengal<br><a href="https://en.wikipedia.org/wiki/Bay_of_Bengaltarget="_blank">the Bay of Bengal</a></div>`)[0];
-                popup_f5022acdc183b174b08f5baddccfe2ca.setContent(html_c3f402bd7b4526840c753305d8f83258);
+                var html_aef535a5cdea3b64634e3cdae5b94544 = $(`<div id="html_aef535a5cdea3b64634e3cdae5b94544" style="width: 100.0%; height: 100.0%;">the Bay of Bengal<br><a href="https://en.wikipedia.org/wiki/Bay_of_Bengal" target="_blank">Bay of Bengal</a></div>`)[0];
+                popup_9368d156a60b474719a211e7cc4e2ad4.setContent(html_aef535a5cdea3b64634e3cdae5b94544);
             
         
 
-        marker_75c7cb870bd22f8ca02c5e68d01b00d1.bindPopup(popup_f5022acdc183b174b08f5baddccfe2ca)
+        marker_51b6d26284880c9ec7f5490000161e95.bindPopup(popup_9368d156a60b474719a211e7cc4e2ad4)
         ;
 
         
     
     
-            marker_75c7cb870bd22f8ca02c5e68d01b00d1.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_c4599f431c6c3975916ce42580e200cc = L.marker(
+            var marker_201d0de0ad5f3a2fe34d795a3b047e96 = L.marker(
                 [4.0, 100.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_a53fc292724b7be475ff0c487b9b8782 = L.AwesomeMarkers.icon(
+            var icon_0325abdb6affc1cac8f3a912a057521d = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_c4599f431c6c3975916ce42580e200cc.setIcon(icon_a53fc292724b7be475ff0c487b9b8782);
+            marker_201d0de0ad5f3a2fe34d795a3b047e96.setIcon(icon_0325abdb6affc1cac8f3a912a057521d);
         
     
-        var popup_99abad64c232b62016421457c5006a43 = L.popup({"maxWidth": "100%"});
+        var popup_455c21085970c846ee0fb747f0c83c36 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_676b78a32e5eb5017d2a704955f9a3a0 = $(`<div id="html_676b78a32e5eb5017d2a704955f9a3a0" style="width: 100.0%; height: 100.0%;">the Strait of Malacca<br><a href="https://en.wikipedia.org/wiki/Strait_of_Malaccatarget="_blank">the Strait of Malacca</a></div>`)[0];
-                popup_99abad64c232b62016421457c5006a43.setContent(html_676b78a32e5eb5017d2a704955f9a3a0);
+                var html_2b6872f2db130c8c92bf14209f458dec = $(`<div id="html_2b6872f2db130c8c92bf14209f458dec" style="width: 100.0%; height: 100.0%;">the Strait of Malacca<br><a href="https://en.wikipedia.org/wiki/Strait_of_Malacca" target="_blank">Strait of Malacca</a></div>`)[0];
+                popup_455c21085970c846ee0fb747f0c83c36.setContent(html_2b6872f2db130c8c92bf14209f458dec);
             
         
 
-        marker_c4599f431c6c3975916ce42580e200cc.bindPopup(popup_99abad64c232b62016421457c5006a43)
+        marker_201d0de0ad5f3a2fe34d795a3b047e96.bindPopup(popup_455c21085970c846ee0fb747f0c83c36)
         ;
 
         
     
     
-            marker_c4599f431c6c3975916ce42580e200cc.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_e4c2d2f4f0d29deddd6de21c901df29c = L.marker(
+            var marker_3dd1be492866699a7265ecd0938d15da = L.marker(
                 [90.0, 0.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_adb35074c4cc60badc880c3dbc6d2583 = L.AwesomeMarkers.icon(
+            var icon_ea089d2b0695178c734ad43639de5676 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_e4c2d2f4f0d29deddd6de21c901df29c.setIcon(icon_adb35074c4cc60badc880c3dbc6d2583);
+            marker_3dd1be492866699a7265ecd0938d15da.setIcon(icon_ea089d2b0695178c734ad43639de5676);
         
     
-        var popup_c24d62fea670f850e347d0b1c333e02c = L.popup({"maxWidth": "100%"});
+        var popup_c89976a29e90f034cfce26a94060e39c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_d5c946d1e6328c83c632669fae6112bf = $(`<div id="html_d5c946d1e6328c83c632669fae6112bf" style="width: 100.0%; height: 100.0%;">the Arctic Ocean<br><a href="https://en.wikipedia.org/wiki/Arctic_Oceantarget="_blank">the Arctic Ocean</a></div>`)[0];
-                popup_c24d62fea670f850e347d0b1c333e02c.setContent(html_d5c946d1e6328c83c632669fae6112bf);
+                var html_7340fdb7aad2191b1daf3f7c109670fb = $(`<div id="html_7340fdb7aad2191b1daf3f7c109670fb" style="width: 100.0%; height: 100.0%;">the Artic Sea<br><a href="https://en.wikipedia.org/wiki/Arctic_Ocean" target="_blank">Arctic Ocean</a></div>`)[0];
+                popup_c89976a29e90f034cfce26a94060e39c.setContent(html_7340fdb7aad2191b1daf3f7c109670fb);
             
         
 
-        marker_e4c2d2f4f0d29deddd6de21c901df29c.bindPopup(popup_c24d62fea670f850e347d0b1c333e02c)
+        marker_3dd1be492866699a7265ecd0938d15da.bindPopup(popup_c89976a29e90f034cfce26a94060e39c)
         ;
 
         
     
     
-            marker_e4c2d2f4f0d29deddd6de21c901df29c.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_96c6f958a17422f9040e1dfedfe0df14 = L.marker(
+            var marker_ac49cd80c4bc9dc7b253704feb3abf65 = L.marker(
                 [12.0, 113.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_413cc280f7ed02b12ad1d8f098ea5034 = L.AwesomeMarkers.icon(
+            var icon_32e32d9d8a28deb077ded90ddf395013 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_96c6f958a17422f9040e1dfedfe0df14.setIcon(icon_413cc280f7ed02b12ad1d8f098ea5034);
+            marker_ac49cd80c4bc9dc7b253704feb3abf65.setIcon(icon_32e32d9d8a28deb077ded90ddf395013);
         
     
-        var popup_1b9a9a76cd58f92cd9de708fc1d55e13 = L.popup({"maxWidth": "100%"});
+        var popup_4588006501c6faf827f78d74dee7aec8 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_9e8bf1200739b960ce036667bf8d1e34 = $(`<div id="html_9e8bf1200739b960ce036667bf8d1e34" style="width: 100.0%; height: 100.0%;">the South China Sea<br><a href="https://en.wikipedia.org/wiki/South_China_Seatarget="_blank">the South China Sea</a></div>`)[0];
-                popup_1b9a9a76cd58f92cd9de708fc1d55e13.setContent(html_9e8bf1200739b960ce036667bf8d1e34);
+                var html_8a78eace38a5db511b6e06608a1d1622 = $(`<div id="html_8a78eace38a5db511b6e06608a1d1622" style="width: 100.0%; height: 100.0%;">the South China Sea<br><a href="https://en.wikipedia.org/wiki/South_China_Sea" target="_blank">South China Sea</a></div>`)[0];
+                popup_4588006501c6faf827f78d74dee7aec8.setContent(html_8a78eace38a5db511b6e06608a1d1622);
             
         
 
-        marker_96c6f958a17422f9040e1dfedfe0df14.bindPopup(popup_1b9a9a76cd58f92cd9de708fc1d55e13)
+        marker_ac49cd80c4bc9dc7b253704feb3abf65.bindPopup(popup_4588006501c6faf827f78d74dee7aec8)
         ;
 
         
     
     
-            marker_96c6f958a17422f9040e1dfedfe0df14.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_b4177359dc3183ad49ec7d77fd878831 = L.marker(
+            var marker_f82b1ee8be417c97ed3e22976cdf40e2 = L.marker(
                 [24.81111111, 119.92833333],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_ab8532a54da916141e7340c356e977e5 = L.AwesomeMarkers.icon(
+            var icon_0ee13cc0875006d23826305aedbd67d9 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_b4177359dc3183ad49ec7d77fd878831.setIcon(icon_ab8532a54da916141e7340c356e977e5);
+            marker_f82b1ee8be417c97ed3e22976cdf40e2.setIcon(icon_0ee13cc0875006d23826305aedbd67d9);
         
     
-        var popup_d79934830b540c50b9a15208458552ce = L.popup({"maxWidth": "100%"});
+        var popup_c7592c8fc29e8ab24653e7736842f52f = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_8319702c3640bc03f945bdc8d40f2e09 = $(`<div id="html_8319702c3640bc03f945bdc8d40f2e09" style="width: 100.0%; height: 100.0%;">the Strait of Taiwan<br><a href="https://en.wikipedia.org/wiki/Taiwan_Straittarget="_blank">the Strait of Taiwan</a></div>`)[0];
-                popup_d79934830b540c50b9a15208458552ce.setContent(html_8319702c3640bc03f945bdc8d40f2e09);
+                var html_3685346b140e32125a15d8d72ae3748e = $(`<div id="html_3685346b140e32125a15d8d72ae3748e" style="width: 100.0%; height: 100.0%;">the Strait of Taiwan<br><a href="https://en.wikipedia.org/wiki/Taiwan_Strait" target="_blank">Taiwan Strait</a></div>`)[0];
+                popup_c7592c8fc29e8ab24653e7736842f52f.setContent(html_3685346b140e32125a15d8d72ae3748e);
             
         
 
-        marker_b4177359dc3183ad49ec7d77fd878831.bindPopup(popup_d79934830b540c50b9a15208458552ce)
+        marker_f82b1ee8be417c97ed3e22976cdf40e2.bindPopup(popup_c7592c8fc29e8ab24653e7736842f52f)
         ;
 
         
     
     
-            marker_b4177359dc3183ad49ec7d77fd878831.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_c847d3378edde2654b93d1a2b62280bf = L.marker(
+            var marker_649f302dd1cea5da54b1019780f4d5fa = L.marker(
                 [30.0, 125.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_4769a050c1dd69964276722d94e3c83b = L.AwesomeMarkers.icon(
+            var icon_217842901ce5287fae6a8defd8afd855 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_c847d3378edde2654b93d1a2b62280bf.setIcon(icon_4769a050c1dd69964276722d94e3c83b);
+            marker_649f302dd1cea5da54b1019780f4d5fa.setIcon(icon_217842901ce5287fae6a8defd8afd855);
         
     
-        var popup_fdff4b2e03e08e1cb9780b6878b98a98 = L.popup({"maxWidth": "100%"});
+        var popup_d14b5b0f9750a48d6a8e7fd68c4665a6 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_e04798e3472f577e09cbcdd6b607f711 = $(`<div id="html_e04798e3472f577e09cbcdd6b607f711" style="width: 100.0%; height: 100.0%;">the East China Sea<br><a href="https://en.wikipedia.org/wiki/East_China_Seatarget="_blank">the East China Sea</a></div>`)[0];
-                popup_fdff4b2e03e08e1cb9780b6878b98a98.setContent(html_e04798e3472f577e09cbcdd6b607f711);
+                var html_b6eccff8d266367397026bef47584e50 = $(`<div id="html_b6eccff8d266367397026bef47584e50" style="width: 100.0%; height: 100.0%;">the East China Sea<br><a href="https://en.wikipedia.org/wiki/East_China_Sea" target="_blank">East China Sea</a></div>`)[0];
+                popup_d14b5b0f9750a48d6a8e7fd68c4665a6.setContent(html_b6eccff8d266367397026bef47584e50);
             
         
 
-        marker_c847d3378edde2654b93d1a2b62280bf.bindPopup(popup_fdff4b2e03e08e1cb9780b6878b98a98)
+        marker_649f302dd1cea5da54b1019780f4d5fa.bindPopup(popup_d14b5b0f9750a48d6a8e7fd68c4665a6)
         ;
 
         
     
     
-            marker_c847d3378edde2654b93d1a2b62280bf.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_fba2a5920306d63deffa24694b1d73ea = L.marker(
+            var marker_63167ae8ccca1f4a5858fccc926886dd = L.marker(
                 [38.0, 123.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_174142e083390c04195ad3a5bba2ae7f = L.AwesomeMarkers.icon(
+            var icon_ea15e22b744cbb7d9767098bb8d1ce34 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_fba2a5920306d63deffa24694b1d73ea.setIcon(icon_174142e083390c04195ad3a5bba2ae7f);
+            marker_63167ae8ccca1f4a5858fccc926886dd.setIcon(icon_ea15e22b744cbb7d9767098bb8d1ce34);
         
     
-        var popup_82afe3285aed1f09b388db052892f691 = L.popup({"maxWidth": "100%"});
+        var popup_c2feab4d15ef3fcb100cab8a4d09f873 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c77a0774595a278c9c2900dfd1f04dcc = $(`<div id="html_c77a0774595a278c9c2900dfd1f04dcc" style="width: 100.0%; height: 100.0%;">the Yellow Sea<br><a href="https://en.wikipedia.org/wiki/Yellow_Seatarget="_blank">the Yellow Sea</a></div>`)[0];
-                popup_82afe3285aed1f09b388db052892f691.setContent(html_c77a0774595a278c9c2900dfd1f04dcc);
+                var html_5aefd63de77336669402c4ac8235c72f = $(`<div id="html_5aefd63de77336669402c4ac8235c72f" style="width: 100.0%; height: 100.0%;">the Yellow Sea<br><a href="https://en.wikipedia.org/wiki/Yellow_Sea" target="_blank">Yellow Sea</a></div>`)[0];
+                popup_c2feab4d15ef3fcb100cab8a4d09f873.setContent(html_5aefd63de77336669402c4ac8235c72f);
             
         
 
-        marker_fba2a5920306d63deffa24694b1d73ea.bindPopup(popup_82afe3285aed1f09b388db052892f691)
+        marker_63167ae8ccca1f4a5858fccc926886dd.bindPopup(popup_c2feab4d15ef3fcb100cab8a4d09f873)
         ;
 
         
     
     
-            marker_fba2a5920306d63deffa24694b1d73ea.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var marker_108f0de60abc26d1beea75dba5d15307 = L.marker(
+            var marker_c4abf870bafce205ae377b6c44d44f56 = L.marker(
                 [40.0, 135.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_a0781a671ea3c731f5421d3b67800c80 = L.AwesomeMarkers.icon(
+            var icon_38643c7308e7e674365eaa87dae8158c = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_108f0de60abc26d1beea75dba5d15307.setIcon(icon_a0781a671ea3c731f5421d3b67800c80);
+            marker_c4abf870bafce205ae377b6c44d44f56.setIcon(icon_38643c7308e7e674365eaa87dae8158c);
         
     
-        var popup_49a41879fe842a09f82dd24798f11894 = L.popup({"maxWidth": "100%"});
+        var popup_5102d1f2bdb232a542b982ffdb1550af = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_de9de83dc959db5d2d2e2e62973e6a72 = $(`<div id="html_de9de83dc959db5d2d2e2e62973e6a72" style="width: 100.0%; height: 100.0%;">the Sea of Japan<br><a href="https://en.wikipedia.org/wiki/Sea_of_Japantarget="_blank">the Sea of Japan</a></div>`)[0];
-                popup_49a41879fe842a09f82dd24798f11894.setContent(html_de9de83dc959db5d2d2e2e62973e6a72);
+                var html_20e451ba784a4dd7a90623c1ead9ad74 = $(`<div id="html_20e451ba784a4dd7a90623c1ead9ad74" style="width: 100.0%; height: 100.0%;">the Sea of Japan<br><a href="https://en.wikipedia.org/wiki/Sea_of_Japan" target="_blank">Sea of Japan</a></div>`)[0];
+                popup_5102d1f2bdb232a542b982ffdb1550af.setContent(html_20e451ba784a4dd7a90623c1ead9ad74);
             
         
 
-        marker_108f0de60abc26d1beea75dba5d15307.bindPopup(popup_49a41879fe842a09f82dd24798f11894)
+        marker_c4abf870bafce205ae377b6c44d44f56.bindPopup(popup_5102d1f2bdb232a542b982ffdb1550af)
         ;
 
         
     
     
-            marker_108f0de60abc26d1beea75dba5d15307.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
+            var marker_791a7ec80f7fb2a76f8938fc59fe7738 = L.marker(
+                [42.0, 50.5],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var marker_2c36e970b2e9e25b3eb9a721a1a28ca4 = L.marker(
+            var icon_2928f6432adc981947eacc2861a317ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_791a7ec80f7fb2a76f8938fc59fe7738.setIcon(icon_2928f6432adc981947eacc2861a317ce);
+        
+    
+        var popup_df4ba42c7369a5de2d6054e08e97f8f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d81c3b70ddda47409baa68e8b622a128 = $(`<div id="html_d81c3b70ddda47409baa68e8b622a128" style="width: 100.0%; height: 100.0%;">the Caspian Sea<br><a href="https://en.wikipedia.org/wiki/Caspian_Sea" target="_blank">Caspian Sea</a></div>`)[0];
+                popup_df4ba42c7369a5de2d6054e08e97f8f3.setContent(html_d81c3b70ddda47409baa68e8b622a128);
+            
+        
+
+        marker_791a7ec80f7fb2a76f8938fc59fe7738.bindPopup(popup_df4ba42c7369a5de2d6054e08e97f8f3)
+        ;
+
+        
+    
+    
+            var marker_d1aca462661cd5c876392c736d772775 = L.marker(
                 [58.0, -178.0],
                 {}
-            ).addTo(map_691e7d417d8ae4293acd84fdad7a191b);
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
     
-            var icon_2fd114b3bf3118f716f0213259972d27 = L.AwesomeMarkers.icon(
+            var icon_09e3c44c808b4c883b38cceb4d67971f = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
             );
-            marker_2c36e970b2e9e25b3eb9a721a1a28ca4.setIcon(icon_2fd114b3bf3118f716f0213259972d27);
+            marker_d1aca462661cd5c876392c736d772775.setIcon(icon_09e3c44c808b4c883b38cceb4d67971f);
         
     
-        var popup_4607f3a625285cc79a4526b5a560d106 = L.popup({"maxWidth": "100%"});
+        var popup_737d6cb5276f5b1b63edfd2a09c80355 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_a259fea994dc3aa5842f00b379bd434d = $(`<div id="html_a259fea994dc3aa5842f00b379bd434d" style="width: 100.0%; height: 100.0%;">The Bering Sea<br><a href="https://en.wikipedia.org/wiki/Bering_Seatarget="_blank">The Bering Sea</a></div>`)[0];
-                popup_4607f3a625285cc79a4526b5a560d106.setContent(html_a259fea994dc3aa5842f00b379bd434d);
+                var html_d2bc7264ace83b9950fef2f0b45555d0 = $(`<div id="html_d2bc7264ace83b9950fef2f0b45555d0" style="width: 100.0%; height: 100.0%;">the Bering Sea<br><a href="https://en.wikipedia.org/wiki/Bering_Sea" target="_blank">Bering Sea</a></div>`)[0];
+                popup_737d6cb5276f5b1b63edfd2a09c80355.setContent(html_d2bc7264ace83b9950fef2f0b45555d0);
             
         
 
-        marker_2c36e970b2e9e25b3eb9a721a1a28ca4.bindPopup(popup_4607f3a625285cc79a4526b5a560d106)
+        marker_d1aca462661cd5c876392c736d772775.bindPopup(popup_737d6cb5276f5b1b63edfd2a09c80355)
         ;
 
         
     
     
-            marker_2c36e970b2e9e25b3eb9a721a1a28ca4.bindTooltip(
-                `<div>
-                     Welke interessante plek ben ik?
-                 </div>`,
-                {"sticky": true}
-            );
+            var marker_e7bf7017379cb625c11c7a66300ce950 = L.marker(
+                [43.741, -110.802],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
         
+    
+            var icon_34f6d0ce6bc01789a1bab3995b8f65d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_e7bf7017379cb625c11c7a66300ce950.setIcon(icon_34f6d0ce6bc01789a1bab3995b8f65d6);
+        
+    
+        var popup_73cf9eeceed4f6cd85a0f4b36d4fec05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f792d2f4eb537838fb4e3050066a5fe = $(`<div id="html_6f792d2f4eb537838fb4e3050066a5fe" style="width: 100.0%; height: 100.0%;">The Rocky Mountains<br><a href="https://en.wikipedia.org/wiki/Rocky_Mountains" target="_blank">Rocky Mountains</a></div>`)[0];
+                popup_73cf9eeceed4f6cd85a0f4b36d4fec05.setContent(html_6f792d2f4eb537838fb4e3050066a5fe);
+            
+        
+
+        marker_e7bf7017379cb625c11c7a66300ce950.bindPopup(popup_73cf9eeceed4f6cd85a0f4b36d4fec05)
+        ;
+
+        
+    
+    
+            var marker_ec19a95fd5291173ab4e7d847b768077 = L.marker(
+                [-32.0, -70.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_52b3a00d3b28aac1c2eadb1650a89449 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_ec19a95fd5291173ab4e7d847b768077.setIcon(icon_52b3a00d3b28aac1c2eadb1650a89449);
+        
+    
+        var popup_88961ed33e44a9f50173f557af02570f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca03603d5d5dc2c796ede7bd6c78b6e4 = $(`<div id="html_ca03603d5d5dc2c796ede7bd6c78b6e4" style="width: 100.0%; height: 100.0%;">the Andes<br><a href="https://en.wikipedia.org/wiki/Andes" target="_blank">Andes</a></div>`)[0];
+                popup_88961ed33e44a9f50173f557af02570f.setContent(html_ca03603d5d5dc2c796ede7bd6c78b6e4);
+            
+        
+
+        marker_ec19a95fd5291173ab4e7d847b768077.bindPopup(popup_88961ed33e44a9f50173f557af02570f)
+        ;
+
+        
+    
+    
+            var marker_1c033416f14156e8fd4e44ded780139b = L.marker(
+                [21.0, -89.6],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_86af3fe1a86207c079c6cc7c16b532a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1c033416f14156e8fd4e44ded780139b.setIcon(icon_86af3fe1a86207c079c6cc7c16b532a0);
+        
+    
+        var popup_edf6a0b203577d5a6cedbb20d46422a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33b85d8fd2725ad8659d32136458abcc = $(`<div id="html_33b85d8fd2725ad8659d32136458abcc" style="width: 100.0%; height: 100.0%;">Yucatan<br><a href="https://en.wikipedia.org/wiki/Yucat%C3%A1n" target="_blank">Yucatán</a></div>`)[0];
+                popup_edf6a0b203577d5a6cedbb20d46422a7.setContent(html_33b85d8fd2725ad8659d32136458abcc);
+            
+        
+
+        marker_1c033416f14156e8fd4e44ded780139b.bindPopup(popup_edf6a0b203577d5a6cedbb20d46422a7)
+        ;
+
+        
+    
+    
+            var marker_90a9ccfe953d833021eeb31abfc86d48 = L.marker(
+                [-2.3096, -54.8881],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_2e96c1194d8ca8365044de1959902720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_90a9ccfe953d833021eeb31abfc86d48.setIcon(icon_2e96c1194d8ca8365044de1959902720);
+        
+    
+        var popup_492f51f59f52546315fed6c834ae8d0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_916b6a372ff9dc1039d454833d668eb4 = $(`<div id="html_916b6a372ff9dc1039d454833d668eb4" style="width: 100.0%; height: 100.0%;">the Amazon Basin<br><a href="https://en.wikipedia.org/wiki/Amazon_basin" target="_blank">Amazon basin</a></div>`)[0];
+                popup_492f51f59f52546315fed6c834ae8d0c.setContent(html_916b6a372ff9dc1039d454833d668eb4);
+            
+        
+
+        marker_90a9ccfe953d833021eeb31abfc86d48.bindPopup(popup_492f51f59f52546315fed6c834ae8d0c)
+        ;
+
+        
+    
+    
+            var marker_3601f992894e1bfd271e0afeefb017fb = L.marker(
+                [32.0, -83.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_b607534e149d3ace61f263866e6cffd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_3601f992894e1bfd271e0afeefb017fb.setIcon(icon_b607534e149d3ace61f263866e6cffd0);
+        
+    
+        var popup_4a21658c591dbfec2547681fc376070b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_105996be629a9bfb827474fd9b321843 = $(`<div id="html_105996be629a9bfb827474fd9b321843" style="width: 100.0%; height: 100.0%;">the American Atlantic Coastal Plain<br><a href="https://en.wikipedia.org/wiki/Atlantic_Plain" target="_blank">Atlantic Plain</a></div>`)[0];
+                popup_4a21658c591dbfec2547681fc376070b.setContent(html_105996be629a9bfb827474fd9b321843);
+            
+        
+
+        marker_3601f992894e1bfd271e0afeefb017fb.bindPopup(popup_4a21658c591dbfec2547681fc376070b)
+        ;
+
+        
+    
+    
+            var marker_baa5e253ef52bd278a9ff93a2f90aeba = L.marker(
+                [23.0, 13.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_4bc830f7a6325fbd2d27724f639f9933 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_baa5e253ef52bd278a9ff93a2f90aeba.setIcon(icon_4bc830f7a6325fbd2d27724f639f9933);
+        
+    
+        var popup_fe45fc256c22920edb2e445c6725bcad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e0db3825c96487097f8f9f000d7d59d = $(`<div id="html_6e0db3825c96487097f8f9f000d7d59d" style="width: 100.0%; height: 100.0%;">the Sahara<br><a href="https://en.wikipedia.org/wiki/Sahara" target="_blank">Sahara</a></div>`)[0];
+                popup_fe45fc256c22920edb2e445c6725bcad.setContent(html_6e0db3825c96487097f8f9f000d7d59d);
+            
+        
+
+        marker_baa5e253ef52bd278a9ff93a2f90aeba.bindPopup(popup_fe45fc256c22920edb2e445c6725bcad)
+        ;
+
+        
+    
+    
+            var marker_a237003c7936088ae58ab15cdf349b15 = L.marker(
+                [19.1119444444, 13.9102777778],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_d4784856513ef9feaf9d4a421beb44b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a237003c7936088ae58ab15cdf349b15.setIcon(icon_d4784856513ef9feaf9d4a421beb44b3);
+        
+    
+        var popup_f58bcfc4acbce7d54d4dc62bca1c7019 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a18816d4fb4519b0c88bbc0a7f14887 = $(`<div id="html_1a18816d4fb4519b0c88bbc0a7f14887" style="width: 100.0%; height: 100.0%;">the Sahel<br><a href="https://en.wikipedia.org/wiki/Sahel" target="_blank">Sahel</a></div>`)[0];
+                popup_f58bcfc4acbce7d54d4dc62bca1c7019.setContent(html_1a18816d4fb4519b0c88bbc0a7f14887);
+            
+        
+
+        marker_a237003c7936088ae58ab15cdf349b15.bindPopup(popup_f58bcfc4acbce7d54d4dc62bca1c7019)
+        ;
+
+        
+    
+    
+            var marker_bf78948bd6bec4dce2a13c5bc0e1f56e = L.marker(
+                [24.0, 25.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_b2727f3c237ccfe9dd8a4462495cf156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_bf78948bd6bec4dce2a13c5bc0e1f56e.setIcon(icon_b2727f3c237ccfe9dd8a4462495cf156);
+        
+    
+        var popup_17780d721a78e5f440d29954806af47c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6cd899409decf8b175cd268cedfe9e2 = $(`<div id="html_f6cd899409decf8b175cd268cedfe9e2" style="width: 100.0%; height: 100.0%;">the Libyan Desert<br><a href="https://en.wikipedia.org/wiki/Libyan_Desert" target="_blank">Libyan Desert</a></div>`)[0];
+                popup_17780d721a78e5f440d29954806af47c.setContent(html_f6cd899409decf8b175cd268cedfe9e2);
+            
+        
+
+        marker_bf78948bd6bec4dce2a13c5bc0e1f56e.bindPopup(popup_17780d721a78e5f440d29954806af47c)
+        ;
+
+        
+    
+    
+            var marker_347d0b08e767cf3768dcf681c62bdab2 = L.marker(
+                [31.05963, -7.91513],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_e177d95963a516f0be4161da3dc639c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_347d0b08e767cf3768dcf681c62bdab2.setIcon(icon_e177d95963a516f0be4161da3dc639c3);
+        
+    
+        var popup_a899bb6e33df4db2cb91681d9ea72b05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07ed981230f478221dcde9898ab3b7fb = $(`<div id="html_07ed981230f478221dcde9898ab3b7fb" style="width: 100.0%; height: 100.0%;">the Atlas Mountains<br><a href="https://en.wikipedia.org/wiki/Atlas_Mountains" target="_blank">Atlas Mountains</a></div>`)[0];
+                popup_a899bb6e33df4db2cb91681d9ea72b05.setContent(html_07ed981230f478221dcde9898ab3b7fb);
+            
+        
+
+        marker_347d0b08e767cf3768dcf681c62bdab2.bindPopup(popup_a899bb6e33df4db2cb91681d9ea72b05)
+        ;
+
+        
+    
+    
+            var marker_cc4b781623edfdf1f69284351e218e35 = L.marker(
+                [42.66666667, 1.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_c21daa366d86fd2c0ea326eacac398f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_cc4b781623edfdf1f69284351e218e35.setIcon(icon_c21daa366d86fd2c0ea326eacac398f6);
+        
+    
+        var popup_8c923b5459b78d742395848c81edc3a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3527c62f95d56940ce61cee263218d0 = $(`<div id="html_b3527c62f95d56940ce61cee263218d0" style="width: 100.0%; height: 100.0%;">the Pyrenees<br><a href="https://en.wikipedia.org/wiki/Pyrenees" target="_blank">Pyrenees</a></div>`)[0];
+                popup_8c923b5459b78d742395848c81edc3a6.setContent(html_b3527c62f95d56940ce61cee263218d0);
+            
+        
+
+        marker_cc4b781623edfdf1f69284351e218e35.bindPopup(popup_8c923b5459b78d742395848c81edc3a6)
+        ;
+
+        
+    
+    
+            var marker_37de385442ce845abb37c5b90d838b98 = L.marker(
+                [46.58, 8.62],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_ba428a6800cf1ac3bfa484202910b98a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_37de385442ce845abb37c5b90d838b98.setIcon(icon_ba428a6800cf1ac3bfa484202910b98a);
+        
+    
+        var popup_17742b1e093907dc9a3595b7d4c35dbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4207005eee07cf5b0b271407276ec6f3 = $(`<div id="html_4207005eee07cf5b0b271407276ec6f3" style="width: 100.0%; height: 100.0%;">the Alps<br><a href="https://en.wikipedia.org/wiki/Alps" target="_blank">Alps</a></div>`)[0];
+                popup_17742b1e093907dc9a3595b7d4c35dbe.setContent(html_4207005eee07cf5b0b271407276ec6f3);
+            
+        
+
+        marker_37de385442ce845abb37c5b90d838b98.bindPopup(popup_17742b1e093907dc9a3595b7d4c35dbe)
+        ;
+
+        
+    
+    
+            var marker_dffbefec512ef606f5e3c74674a2c9a8 = L.marker(
+                [43.28166667, 12.58166667],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_ad76d5890f43937e65a2bdeb76d3e6b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dffbefec512ef606f5e3c74674a2c9a8.setIcon(icon_ad76d5890f43937e65a2bdeb76d3e6b1);
+        
+    
+        var popup_7f0b08039a7263f5751127d40b5318ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f03b83b769fde40918d0d61b9d289c32 = $(`<div id="html_f03b83b769fde40918d0d61b9d289c32" style="width: 100.0%; height: 100.0%;">the Apennines<br><a href="https://en.wikipedia.org/wiki/Apennine_Mountains" target="_blank">Apennine Mountains</a></div>`)[0];
+                popup_7f0b08039a7263f5751127d40b5318ff.setContent(html_f03b83b769fde40918d0d61b9d289c32);
+            
+        
+
+        marker_dffbefec512ef606f5e3c74674a2c9a8.bindPopup(popup_7f0b08039a7263f5751127d40b5318ff)
+        ;
+
+        
+    
+    
+            var marker_9c964d656c7faca1fa2e44c8b1bc0e42 = L.marker(
+                [42.71713, 24.91716],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_ee6ffd252e375aa094cc3526a4f4c1dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_9c964d656c7faca1fa2e44c8b1bc0e42.setIcon(icon_ee6ffd252e375aa094cc3526a4f4c1dc);
+        
+    
+        var popup_252f3175e971b101bf29aedc99c67aa7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d05dde1d571ea75320ccd170e7b6b72f = $(`<div id="html_d05dde1d571ea75320ccd170e7b6b72f" style="width: 100.0%; height: 100.0%;">the Balkans<br><a href="https://en.wikipedia.org/wiki/Balkans" target="_blank">Balkans</a></div>`)[0];
+                popup_252f3175e971b101bf29aedc99c67aa7.setContent(html_d05dde1d571ea75320ccd170e7b6b72f);
+            
+        
+
+        marker_9c964d656c7faca1fa2e44c8b1bc0e42.bindPopup(popup_252f3175e971b101bf29aedc99c67aa7)
+        ;
+
+        
+    
+    
+            var marker_70b1c19cf8e7267e609729a4535ec681 = L.marker(
+                [47.0, 25.5],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_ed5247ab2c7011436360c0dd0a51dbee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_70b1c19cf8e7267e609729a4535ec681.setIcon(icon_ed5247ab2c7011436360c0dd0a51dbee);
+        
+    
+        var popup_ac0e8e50ec05b2b2947c2704fd23319b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b217bf7e4343dd2716cc1e5ae23eb7c6 = $(`<div id="html_b217bf7e4343dd2716cc1e5ae23eb7c6" style="width: 100.0%; height: 100.0%;">the Carpathians<br><a href="https://en.wikipedia.org/wiki/Carpathian_Mountains" target="_blank">Carpathian Mountains</a></div>`)[0];
+                popup_ac0e8e50ec05b2b2947c2704fd23319b.setContent(html_b217bf7e4343dd2716cc1e5ae23eb7c6);
+            
+        
+
+        marker_70b1c19cf8e7267e609729a4535ec681.bindPopup(popup_ac0e8e50ec05b2b2947c2704fd23319b)
+        ;
+
+        
+    
+    
+            var marker_4002db4c6683ca3b8d877f1d63666763 = L.marker(
+                [42.26111111, 44.12111111],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_7d3f93d9363a6087c53d1702f79af2dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4002db4c6683ca3b8d877f1d63666763.setIcon(icon_7d3f93d9363a6087c53d1702f79af2dd);
+        
+    
+        var popup_0a94cb24fab103d42a6835223b102f27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22858cabc4ab43a469aa31114e2afa79 = $(`<div id="html_22858cabc4ab43a469aa31114e2afa79" style="width: 100.0%; height: 100.0%;">the Caucasus<br><a href="https://en.wikipedia.org/wiki/Caucasus" target="_blank">Caucasus</a></div>`)[0];
+                popup_0a94cb24fab103d42a6835223b102f27.setContent(html_22858cabc4ab43a469aa31114e2afa79);
+            
+        
+
+        marker_4002db4c6683ca3b8d877f1d63666763.bindPopup(popup_0a94cb24fab103d42a6835223b102f27)
+        ;
+
+        
+    
+    
+            var marker_1e857fc54ff687f6e9f1336145cb407b = L.marker(
+                [39.0, 35.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_7a008b719c23260f234cf32256853872 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1e857fc54ff687f6e9f1336145cb407b.setIcon(icon_7a008b719c23260f234cf32256853872);
+        
+    
+        var popup_8c02137f884479d8bafb83ef45c0c34a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3caf29b044f9ca6b59e8490c68efc16 = $(`<div id="html_f3caf29b044f9ca6b59e8490c68efc16" style="width: 100.0%; height: 100.0%;">Anatolia<br><a href="https://en.wikipedia.org/wiki/Anatolia" target="_blank">Anatolia</a></div>`)[0];
+                popup_8c02137f884479d8bafb83ef45c0c34a.setContent(html_f3caf29b044f9ca6b59e8490c68efc16);
+            
+        
+
+        marker_1e857fc54ff687f6e9f1336145cb407b.bindPopup(popup_8c02137f884479d8bafb83ef45c0c34a)
+        ;
+
+        
+    
+    
+            var marker_137c971376fe77d7342679811e8f456a = L.marker(
+                [33.66666667, 47.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_f433ec7a8cc7c37d354436a0a072ecf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_137c971376fe77d7342679811e8f456a.setIcon(icon_f433ec7a8cc7c37d354436a0a072ecf3);
+        
+    
+        var popup_99cdd494b3760d2672e995e4f912bb66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e27c69b6de13fbb550afe02ec57e184 = $(`<div id="html_2e27c69b6de13fbb550afe02ec57e184" style="width: 100.0%; height: 100.0%;">the Zagros<br><a href="https://en.wikipedia.org/wiki/Zagros_Mountains" target="_blank">Zagros Mountains</a></div>`)[0];
+                popup_99cdd494b3760d2672e995e4f912bb66.setContent(html_2e27c69b6de13fbb550afe02ec57e184);
+            
+        
+
+        marker_137c971376fe77d7342679811e8f456a.bindPopup(popup_99cdd494b3760d2672e995e4f912bb66)
+        ;
+
+        
+    
+    
+            var marker_6164faa3356add439dcba380f2616081 = L.marker(
+                [29.5, 33.8],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_8f135056913b5a6b2decec2b93a20436 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_6164faa3356add439dcba380f2616081.setIcon(icon_8f135056913b5a6b2decec2b93a20436);
+        
+    
+        var popup_ddb512fedf0119deda990c39d17758fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59f50ede6005048ec64fb717747a1175 = $(`<div id="html_59f50ede6005048ec64fb717747a1175" style="width: 100.0%; height: 100.0%;">the Sinai<br><a href="https://en.wikipedia.org/wiki/Sinai_Peninsula" target="_blank">Sinai Peninsula</a></div>`)[0];
+                popup_ddb512fedf0119deda990c39d17758fa.setContent(html_59f50ede6005048ec64fb717747a1175);
+            
+        
+
+        marker_6164faa3356add439dcba380f2616081.bindPopup(popup_ddb512fedf0119deda990c39d17758fa)
+        ;
+
+        
+    
+    
+            var marker_3614323be134384afd573329fea7ffc6 = L.marker(
+                [20.0, 50.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_91773dac920f165ed6146cf88a18825d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_3614323be134384afd573329fea7ffc6.setIcon(icon_91773dac920f165ed6146cf88a18825d);
+        
+    
+        var popup_4ec01dd73b778b3e22cddf93f97e3bee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ac0a189b4e43c8f76025d895b8681a1 = $(`<div id="html_0ac0a189b4e43c8f76025d895b8681a1" style="width: 100.0%; height: 100.0%;">the Arabian Desert<br><a href="https://en.wikipedia.org/wiki/Arabian_Desert" target="_blank">Arabian Desert</a></div>`)[0];
+                popup_4ec01dd73b778b3e22cddf93f97e3bee.setContent(html_0ac0a189b4e43c8f76025d895b8681a1);
+            
+        
+
+        marker_3614323be134384afd573329fea7ffc6.bindPopup(popup_4ec01dd73b778b3e22cddf93f97e3bee)
+        ;
+
+        
+    
+    
+            var marker_4e19366df3e289bb4595f7c03f7ed60e = L.marker(
+                [35.0, 71.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_9725a89c2b36da078be5f84bc1e1b967 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_4e19366df3e289bb4595f7c03f7ed60e.setIcon(icon_9725a89c2b36da078be5f84bc1e1b967);
+        
+    
+        var popup_fab240877098d9827e2f58f239a428e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78807720b2d3fc966e7450275a37a848 = $(`<div id="html_78807720b2d3fc966e7450275a37a848" style="width: 100.0%; height: 100.0%;">the Hindu Kush<br><a href="https://en.wikipedia.org/wiki/Hindu_Kush" target="_blank">Hindu Kush</a></div>`)[0];
+                popup_fab240877098d9827e2f58f239a428e8.setContent(html_78807720b2d3fc966e7450275a37a848);
+            
+        
+
+        marker_4e19366df3e289bb4595f7c03f7ed60e.bindPopup(popup_fab240877098d9827e2f58f239a428e8)
+        ;
+
+        
+    
+    
+            var marker_419c9a927685ae9c2b41540c8d48fc3c = L.marker(
+                [60.0, 59.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_941d3acd487f307a05f6c5ab754ed623 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_419c9a927685ae9c2b41540c8d48fc3c.setIcon(icon_941d3acd487f307a05f6c5ab754ed623);
+        
+    
+        var popup_ae598cef4c38f9692893411baa070ffa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_748f2e34e70867baca0d2511cc24fd07 = $(`<div id="html_748f2e34e70867baca0d2511cc24fd07" style="width: 100.0%; height: 100.0%;">the Ural<br><a href="https://en.wikipedia.org/wiki/Ural_Mountains" target="_blank">Ural Mountains</a></div>`)[0];
+                popup_ae598cef4c38f9692893411baa070ffa.setContent(html_748f2e34e70867baca0d2511cc24fd07);
+            
+        
+
+        marker_419c9a927685ae9c2b41540c8d48fc3c.bindPopup(popup_ae598cef4c38f9692893411baa070ffa)
+        ;
+
+        
+    
+    
+            var marker_0a540d6069c4d05eb4df0f9814ba09f7 = L.marker(
+                [42.0, 80.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_5b390288cea25a79032cc45bf19121b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_0a540d6069c4d05eb4df0f9814ba09f7.setIcon(icon_5b390288cea25a79032cc45bf19121b5);
+        
+    
+        var popup_167a6c93b78d208615916adc43cf348e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_769bbe5eb6d8836261fa0bc1fd9dd5d7 = $(`<div id="html_769bbe5eb6d8836261fa0bc1fd9dd5d7" style="width: 100.0%; height: 100.0%;">the Tian Shan<br><a href="https://en.wikipedia.org/wiki/Tian_Shan" target="_blank">Tian Shan</a></div>`)[0];
+                popup_167a6c93b78d208615916adc43cf348e.setContent(html_769bbe5eb6d8836261fa0bc1fd9dd5d7);
+            
+        
+
+        marker_0a540d6069c4d05eb4df0f9814ba09f7.bindPopup(popup_167a6c93b78d208615916adc43cf348e)
+        ;
+
+        
+    
+    
+            var marker_b6b1e6f00124c04423e771a0b15bc8a6 = L.marker(
+                [27.983333, 86.916667],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_e32a835e34bb5565e453d34d0103043c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b6b1e6f00124c04423e771a0b15bc8a6.setIcon(icon_e32a835e34bb5565e453d34d0103043c);
+        
+    
+        var popup_c996518363f59b174fc515c29997a0df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_492c10e10c14af6768ba1a4d2005698f = $(`<div id="html_492c10e10c14af6768ba1a4d2005698f" style="width: 100.0%; height: 100.0%;">the Himalaya<br><a href="https://en.wikipedia.org/wiki/Himalayas" target="_blank">Himalayas</a></div>`)[0];
+                popup_c996518363f59b174fc515c29997a0df.setContent(html_492c10e10c14af6768ba1a4d2005698f);
+            
+        
+
+        marker_b6b1e6f00124c04423e771a0b15bc8a6.bindPopup(popup_c996518363f59b174fc515c29997a0df)
+        ;
+
+        
+    
+    
+            var marker_ac1eedd3851f9c083649283748f411bb = L.marker(
+                [45.0, 110.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_fc4ccf024b1043c32e4bc56180593334 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_ac1eedd3851f9c083649283748f411bb.setIcon(icon_fc4ccf024b1043c32e4bc56180593334);
+        
+    
+        var popup_390af0809cb757bb34ea0ad2d6efacbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_707036b940768211ef3a3ca248465e39 = $(`<div id="html_707036b940768211ef3a3ca248465e39" style="width: 100.0%; height: 100.0%;">the Mongolian plains<br><a href="https://en.wikipedia.org/wiki/Mongolian_Plateau" target="_blank">Mongolian Plateau</a></div>`)[0];
+                popup_390af0809cb757bb34ea0ad2d6efacbc.setContent(html_707036b940768211ef3a3ca248465e39);
+            
+        
+
+        marker_ac1eedd3851f9c083649283748f411bb.bindPopup(popup_390af0809cb757bb34ea0ad2d6efacbc)
+        ;
+
+        
+    
+    
+            var marker_b1da5f5757bf35e877a064c2928ef0f3 = L.marker(
+                [48.356534, 44.530067],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_66fbbe7a998e272a75424a07d29adeb4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b1da5f5757bf35e877a064c2928ef0f3.setIcon(icon_66fbbe7a998e272a75424a07d29adeb4);
+        
+    
+        var popup_dce8a891649df2d38476d766fa0f62a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91bcaa63c7a52b4f42bde4b6e5aaa163 = $(`<div id="html_91bcaa63c7a52b4f42bde4b6e5aaa163" style="width: 100.0%; height: 100.0%;">the Pontic-Caspian Steppe<br><a href="https://en.wikipedia.org/wiki/Pontic%E2%80%93Caspian_steppe" target="_blank">Pontic–Caspian steppe</a></div>`)[0];
+                popup_dce8a891649df2d38476d766fa0f62a8.setContent(html_91bcaa63c7a52b4f42bde4b6e5aaa163);
+            
+        
+
+        marker_b1da5f5757bf35e877a064c2928ef0f3.bindPopup(popup_dce8a891649df2d38476d766fa0f62a8)
+        ;
+
+        
+    
+    
+            var marker_d47c1c1597a97752de1e0cc785e41af0 = L.marker(
+                [27.25, 80.5],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_0b3ffa7ee5555b62226155b59894110a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d47c1c1597a97752de1e0cc785e41af0.setIcon(icon_0b3ffa7ee5555b62226155b59894110a);
+        
+    
+        var popup_a015ed82be31029ca0d98679d3fb1384 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4e3145c246ca46c0d14a910bcfbcc77 = $(`<div id="html_b4e3145c246ca46c0d14a910bcfbcc77" style="width: 100.0%; height: 100.0%;">the Indo-Gangetic Plain<br><a href="https://en.wikipedia.org/wiki/Indo-Gangetic_Plain" target="_blank">Indo-Gangetic Plain</a></div>`)[0];
+                popup_a015ed82be31029ca0d98679d3fb1384.setContent(html_b4e3145c246ca46c0d14a910bcfbcc77);
+            
+        
+
+        marker_d47c1c1597a97752de1e0cc785e41af0.bindPopup(popup_a015ed82be31029ca0d98679d3fb1384)
+        ;
+
+        
+    
+    
+            var marker_2f1ef543c028fd75d069bbe04a1b9dc1 = L.marker(
+                [47.0, 119.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_a01925cebf03b1edfdc8dac0398f82ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_2f1ef543c028fd75d069bbe04a1b9dc1.setIcon(icon_a01925cebf03b1edfdc8dac0398f82ea);
+        
+    
+        var popup_ce9afd88eca4fb6395c6122c5493e835 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d9426898c057e5f610190671ff29e3e = $(`<div id="html_3d9426898c057e5f610190671ff29e3e" style="width: 100.0%; height: 100.0%;">the Manchurian Steppe<br><a href="https://en.wikipedia.org/wiki/Mongolian%E2%80%93Manchurian_grassland" target="_blank">Mongolian–Manchurian grassland</a></div>`)[0];
+                popup_ce9afd88eca4fb6395c6122c5493e835.setContent(html_3d9426898c057e5f610190671ff29e3e);
+            
+        
+
+        marker_2f1ef543c028fd75d069bbe04a1b9dc1.bindPopup(popup_ce9afd88eca4fb6395c6122c5493e835)
+        ;
+
+        
+    
+    
+            var marker_f8711586d8483a0967b71296940f0b94 = L.marker(
+                [61.0, 105.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_fde525ed3c728a39185043b67e6743f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_f8711586d8483a0967b71296940f0b94.setIcon(icon_fde525ed3c728a39185043b67e6743f8);
+        
+    
+        var popup_06674883473a338612d56c7c49ad3bed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77a3fd0ebe2e25101172ed823476bf80 = $(`<div id="html_77a3fd0ebe2e25101172ed823476bf80" style="width: 100.0%; height: 100.0%;">Siberia<br><a href="https://en.wikipedia.org/wiki/Siberia" target="_blank">Siberia</a></div>`)[0];
+                popup_06674883473a338612d56c7c49ad3bed.setContent(html_77a3fd0ebe2e25101172ed823476bf80);
+            
+        
+
+        marker_f8711586d8483a0967b71296940f0b94.bindPopup(popup_06674883473a338612d56c7c49ad3bed)
+        ;
+
+        
+    
+    
+            var marker_752b70511345a9061a9034d19484ac2f = L.marker(
+                [27.0, 71.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_da197fc8d8f8b8cbe0e4f64c2dc36f2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_752b70511345a9061a9034d19484ac2f.setIcon(icon_da197fc8d8f8b8cbe0e4f64c2dc36f2d);
+        
+    
+        var popup_002982d1a2f432185b25c7c6c6f32931 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2134e961ef06100126759aca181701d = $(`<div id="html_a2134e961ef06100126759aca181701d" style="width: 100.0%; height: 100.0%;">the Thar Desert<br><a href="https://en.wikipedia.org/wiki/Thar_Desert" target="_blank">Thar Desert</a></div>`)[0];
+                popup_002982d1a2f432185b25c7c6c6f32931.setContent(html_a2134e961ef06100126759aca181701d);
+            
+        
+
+        marker_752b70511345a9061a9034d19484ac2f.bindPopup(popup_002982d1a2f432185b25c7c6c6f32931)
+        ;
+
+        
+    
+    
+            var marker_5f35296a45d442c107fdaebaec3f28de = L.marker(
+                [42.59, 103.43],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_613b63038f8e4c0ef8c29e9da41fb8ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_5f35296a45d442c107fdaebaec3f28de.setIcon(icon_613b63038f8e4c0ef8c29e9da41fb8ba);
+        
+    
+        var popup_2d75ae53e1c10dfef8046a200bfc7357 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a6d5be32dd573fc9188fd521388e92b = $(`<div id="html_4a6d5be32dd573fc9188fd521388e92b" style="width: 100.0%; height: 100.0%;">the Gobi Desert<br><a href="https://en.wikipedia.org/wiki/Gobi_Desert" target="_blank">Gobi Desert</a></div>`)[0];
+                popup_2d75ae53e1c10dfef8046a200bfc7357.setContent(html_4a6d5be32dd573fc9188fd521388e92b);
+            
+        
+
+        marker_5f35296a45d442c107fdaebaec3f28de.bindPopup(popup_2d75ae53e1c10dfef8046a200bfc7357)
+        ;
+
+        
+    
+    
+            var marker_33e91dcc592bdd8fedd885c8bca32ed6 = L.marker(
+                [15.0, 77.0],
+                {}
+            ).addTo(map_88fb0b394e0400419f00953410d5f8e5);
+        
+    
+            var icon_a8f2f4d26a5c684bd7183f14a6b8d86a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_33e91dcc592bdd8fedd885c8bca32ed6.setIcon(icon_a8f2f4d26a5c684bd7183f14a6b8d86a);
+        
+    
+        var popup_a692dac3ff95539404b0367fae20c819 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_277252688ceb79a674c6a65953d61b7c = $(`<div id="html_277252688ceb79a674c6a65953d61b7c" style="width: 100.0%; height: 100.0%;">the Deccan Plateau<br><a href="https://en.wikipedia.org/wiki/Deccan_Plateau" target="_blank">Deccan Plateau</a></div>`)[0];
+                popup_a692dac3ff95539404b0367fae20c819.setContent(html_277252688ceb79a674c6a65953d61b7c);
+            
+        
+
+        marker_33e91dcc592bdd8fedd885c8bca32ed6.bindPopup(popup_a692dac3ff95539404b0367fae20c819)
+        ;
+
+        
+    
 </script>
 </html>
